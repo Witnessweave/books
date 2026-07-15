@@ -1356,6 +1356,8 @@
     /* tooltip system (reusable, touch-friendly) */
     .tooltip-pill{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 18px);transform:translateX(-50%) translateY(8px);background:var(--hint-bg,#2b2622);color:var(--hint-text,#f2ecdf);padding:.5rem .95rem;border-radius:999px;font-size:.8rem;font-family:var(--ui-font,system-ui);opacity:0;pointer-events:none;transition:opacity .3s ease,transform .3s ease;z-index:60;box-shadow:0 6px 20px rgba(0,0,0,.35);white-space:nowrap;max-width:90vw;letter-spacing:.02em}
     .tooltip-pill.show{opacity:.96;transform:translateX(-50%) translateY(0)}
+    /* auto-read current-paragraph highlight */
+    .book-content p.auto-reading{background:var(--auto-hl,rgba(201,162,75,.20));border-radius:6px;box-shadow:0 0 0 6px var(--auto-hl,rgba(201,162,75,.20));transition:background .35s ease,box-shadow .35s ease}
   </style>
 </head>
 <body>
@@ -1454,6 +1456,7 @@
           <button type="button" class="icon-btn" id="btnTts" aria-label="Read aloud" title="Read Aloud"><span class="icon-sym">&#x266A;</span><span class="icon-label">Listen</span></button>
           <button type="button" class="icon-btn" id="btnImmerse" aria-label="Immersion mode" title="Focus Mode"><span class="icon-sym">&#x25CE;</span><span class="icon-label">Focus</span></button>
           <button type="button" class="icon-btn" id="btnFull" aria-label="Fullscreen" title="Fullscreen"><span class="icon-sym">&#x26F6;</span><span class="icon-label">Full</span></button>
+          <button type="button" class="icon-btn" id="btnAuto" aria-label="Auto-read" title="Auto-read"><span class="icon-sym">&#x25B6;</span><span class="icon-label">Auto</span></button>
         </div>
         <div class="footer-right">
           <span class="progress-pct" id="progressPct">0%</span>
@@ -1745,6 +1748,8 @@
       pages.forEach(function(_, pi){
         var dot = document.createElement("div");
         dot.className = "progress-dot" + (pi === 0 ? " active" : "");
+        dot.style.cursor = "pointer"; dot.style.pointerEvents = "auto";
+        dot.addEventListener("click", function(e){ e.stopPropagation(); goTo(pi); });
         progBar.appendChild(dot);
       });
 
@@ -1977,6 +1982,26 @@
       document.addEventListener("fullscreenchange", onFsChange);
       document.addEventListener("webkitfullscreenchange", onFsChange);
     }
+
+    // ── AUTO-READ (auto-scroll + highlight, ~180 wpm; pairs with the audiobook) ──
+    var btnAuto=document.getElementById("btnAuto"), autoOn=false, autoTimer=null, autoIdx=0;
+    function autoClear(){ var s=viewport.querySelector(".page-slot.active .book-content"); if(s) s.querySelectorAll(".auto-reading").forEach(function(p){p.classList.remove("auto-reading");}); }
+    function autoStep(){
+      var slot=viewport.querySelector(".page-slot.active .book-content");
+      if(!slot){ stopAuto(); return; }
+      var ps=slot.querySelectorAll("p"); autoClear();
+      if(autoIdx>=ps.length){
+        if(current<pages.length-1){ autoIdx=0; goTo(current+1); autoTimer=setTimeout(autoStep,470); }
+        else stopAuto();
+        return;
+      }
+      var p=ps[autoIdx]; p.classList.add("auto-reading");
+      var w=p.textContent.split(/\s+/).length, ms=Math.max(1600, w/180*60000);
+      autoIdx++; autoTimer=setTimeout(autoStep, ms);
+    }
+    function startAuto(){ if(!btnAuto) return; autoOn=true; autoIdx=0; btnAuto.classList.add("active"); showTooltip("Auto-reading \u2014 tap Auto to stop",{persistent:true}); autoStep(); }
+    function stopAuto(){ autoOn=false; clearTimeout(autoTimer); if(btnAuto) btnAuto.classList.remove("active"); autoClear(); if(page.classList.contains("immersed")) updateFocusTooltip(); else hideTooltip(); }
+    if(btnAuto) btnAuto.addEventListener("click", function(e){ e.stopPropagation(); autoOn?stopAuto():startAuto(); });
 
     // R-1: Auto-exit immersion on any page turn
     function exitImmersionOnTurn(){ /* focus mode persists across page turns; exit via double-tap */ }
