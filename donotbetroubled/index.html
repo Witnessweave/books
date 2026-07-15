@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta name="description" content="Do Not Be Troubled &#x2014; already loved by Jesus in a shaking world. A book by Lewis Villanueva.">
   <style>
-/* fonts inlined for offline use */
 /* latin-ext */
 @font-face {
   font-family: 'Atkinson Hyperlegible';
@@ -1354,6 +1353,9 @@
     @media (max-width: 360px) {
       .icon-label { display: none; } /* C-1: icons only on tiny screens */
     }
+    /* tooltip system (reusable, touch-friendly) */
+    .tooltip-pill{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 18px);transform:translateX(-50%) translateY(8px);background:var(--hint-bg,#2b2622);color:var(--hint-text,#f2ecdf);padding:.5rem .95rem;border-radius:999px;font-size:.8rem;font-family:var(--ui-font,system-ui);opacity:0;pointer-events:none;transition:opacity .3s ease,transform .3s ease;z-index:60;box-shadow:0 6px 20px rgba(0,0,0,.35);white-space:nowrap;max-width:90vw;letter-spacing:.02em}
+    .tooltip-pill.show{opacity:.96;transform:translateX(-50%) translateY(0)}
   </style>
 </head>
 <body>
@@ -1906,6 +1908,7 @@
     // ── CENTER TAP → IMMERSION (#7) — desktop only ──
     centerZ.addEventListener("click", function(){
       page.classList.toggle("immersed");
+      updateFocusTooltip();
     });
 
     // ── IMMERSION BUTTON — all devices (#7) ──
@@ -1916,7 +1919,39 @@
       e.stopPropagation();
       page.classList.toggle("immersed");
       btnImmerse.classList.toggle("active");
+      updateFocusTooltip();
     });
+
+    // ── TOOLTIP SYSTEM (reusable, touch-friendly) ──
+    var _ttEl=null, _ttTimer=null;
+    function showTooltip(text, opts){
+      opts=opts||{};
+      if(!_ttEl){ _ttEl=document.createElement("div"); _ttEl.className="tooltip-pill"; document.body.appendChild(_ttEl); }
+      _ttEl.textContent=text; _ttEl.classList.add("show");
+      clearTimeout(_ttTimer);
+      if(!opts.persistent){ _ttTimer=setTimeout(hideTooltip, opts.duration||2400); }
+    }
+    function hideTooltip(){ if(_ttEl) _ttEl.classList.remove("show"); clearTimeout(_ttTimer); }
+    function updateFocusTooltip(){
+      if(page.classList.contains("immersed")) showTooltip("Double-tap to exit focus", {persistent:true});
+      else hideTooltip();
+    }
+
+    // ── FOCUS MODE: persists across page turns; exit ONLY by double-tap ──
+    function exitFocus(){
+      if(page.classList.contains("immersed")){
+        page.classList.remove("immersed");
+        btnImmerse.classList.remove("active");
+        updateFocusTooltip();
+      }
+    }
+    page.addEventListener("dblclick", function(){ exitFocus(); });
+    var _lastTapFocus=0;
+    page.addEventListener("touchend", function(){
+      if(!page.classList.contains("immersed")) return;
+      var now=Date.now();
+      if(now-_lastTapFocus<300){ exitFocus(); _lastTapFocus=0; } else { _lastTapFocus=now; }
+    }, {passive:true});
 
     // ── FULLSCREEN ──
     var btnFull = document.getElementById("btnFull");
@@ -1944,12 +1979,7 @@
     }
 
     // R-1: Auto-exit immersion on any page turn
-    function exitImmersionOnTurn(){
-      if(page.classList.contains("immersed")){
-        page.classList.remove("immersed");
-        btnImmerse.classList.remove("active");
-      }
-    }
+    function exitImmersionOnTurn(){ /* focus mode persists across page turns; exit via double-tap */ }
 
     // ── HINT TEXT — swipe on touch, tap on desktop ──
     var isTouch = !window.matchMedia("(hover: hover) and (pointer: fine)").matches;
