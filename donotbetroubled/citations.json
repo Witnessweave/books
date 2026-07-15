@@ -1,0 +1,2603 @@
+{
+ "_doc": {
+  "purpose": "Reviewed Scripture citations for 'Do Not Be Troubled'. The generator places links FROM this file. It must never re-derive them by matching — the book quotes NKJV while the target Bible is KJV, so string matching produces both false positives (the author's rhetorical inversions) and false negatives (Matthew 6:34). These were judged by readers and then attacked by adversarial skeptics. 81 of 145 candidates were rejected.",
+  "bible": "https://bible.witnessweave.com",
+  "link_format": "https://bible.witnessweave.com/#<Book>/<Chapter>/<Verse>  (es: #es/<Libro>/<Cap>/<Ver>)",
+  "ruling": "Only genuine quotations link. Inversions, prayers, dialogue, allusions, ambiguous and too-thin spans are recorded but NOT linked (Red Line 4 — a wrong citation is worse than none).",
+  "ledger": "WV-VERSE-20260715-051",
+  "glow": "One/two-word quotes do not get a citation link (over-reach). They get a GLOWBOX: a gentle glow that, on tap, reveals the full verse text and offers a way through to the Bible. Verse text is embedded so it works offline.",
+  "allusions": "Allusions carry an ASTERISK (a weaker claim than a quotation's underline) + a glowbox showing the verse(s) they reach for. `composite` allusions legitimately reach for several verses and the box shows all of them. `diffuse` ones — the author's own images with no real referent — are recorded in unmarked_allusions and get NO mark."
+ },
+ "citations": [
+  {
+   "chapter": "prologue",
+   "ref": "John 8:32",
+   "book": "John",
+   "chap": 8,
+   "verse": 32,
+   "span_en": "And you shall know the truth, and the truth shall make you free.",
+   "span_es": "Y conoceréis la verdad, y la verdad os hará libres.",
+   "ref_es": "Juan 8:32",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Epigraph quotes John 8:32 verbatim (NKJV) and the author himself names the reference; KJV ground truth matches word for word."
+  },
+  {
+   "chapter": "intro",
+   "ref": "John 16:33",
+   "book": "John",
+   "chap": 16,
+   "verse": 33,
+   "span_en": "In the world you will have tribulation; but be of good cheer, I have overcome the world.",
+   "span_es": "En el mundo tendréis aflicción; pero confiad, yo he vencido al mundo.",
+   "ref_es": "Juan 16:33",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Direct quotation ('He said, \"...\"') reproducing NKJV John 16:33b verbatim and matching the KJV in meaning exactly."
+  },
+  {
+   "chapter": "ch1",
+   "ref": "Matthew 24:6",
+   "book": "Matthew",
+   "chap": 24,
+   "verse": 6,
+   "span_en": "You will hear of wars and rumors of wars. See that you are not troubled; for all these things must come to pass.",
+   "span_es": "Y oiréis de guerras y rumores de guerras; mirad que no os turbéis, porque es necesario que todo esto acontezca.",
+   "ref_es": "Mateo 24:6",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Explicitly quoted and attributed to Jesus speaking of the end of the age; the span is Matthew 24:6 in NKJV wording, asserted straight rather than inverted."
+  },
+  {
+   "chapter": "ch2",
+   "ref": "John 10:27",
+   "book": "John",
+   "chap": 10,
+   "verse": 27,
+   "span_en": "My sheep hear My voice, and I know them, and they follow Me.",
+   "span_es": "Mis ovejas oyen mi voz, y yo las conozco, y me siguen.",
+   "ref_es": "Juan 10:27",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Epigraph explicitly cited to John 10:27 and verbatim to the KJV apart from capitalization; uniquely that verse."
+  },
+  {
+   "chapter": "ch2",
+   "ref": "Matthew 11:28",
+   "book": "Matthew",
+   "chap": 11,
+   "verse": 28,
+   "span_en": "Come to Me, all you who labor and are heavy laden, and I will give you rest.",
+   "span_es": "Venid a mí todos los que estáis trabajados y cargados, y yo os haré descansar.",
+   "ref_es": "Mateo 11:28",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Verbatim NKJV Matthew 11:28 quoted as Christ's own call; the surrounding 'Follow Me. Listen to Me.' framing does not invert or dilute it."
+  },
+  {
+   "chapter": "ch2",
+   "ref": "Psalms 23:1",
+   "book": "Psalms",
+   "chap": 23,
+   "verse": 1,
+   "span_en": "The Lord is my shepherd; I shall not want,",
+   "span_es": "El Señor es mi pastor; nada me faltará,",
+   "ref_es": "Salmos 23:1",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Offered explicitly as 'one verse you remember' and reproduces Psalms 23:1 verbatim; unmistakably that verse."
+  },
+  {
+   "chapter": "ch3",
+   "ref": "1 Peter 5:7",
+   "book": "1 Peter",
+   "chap": 5,
+   "verse": 7,
+   "span_en": "casting all your care upon Him, for He cares for you.",
+   "span_es": "echando toda vuestra ansiedad sobre él, porque él tiene cuidado de vosotros.",
+   "ref_es": "1 Pedro 5:7",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Asserted as Scripture ('the same Word also says... Both are Scripture') and is 1 Peter 5:7 verbatim in NKJV."
+  },
+  {
+   "chapter": "ch5",
+   "ref": "Galatians 6:9",
+   "book": "Galatians",
+   "chap": 6,
+   "verse": 9,
+   "span_en": "And let us not grow weary while doing good, for in due season we shall reap if we do not lose heart.",
+   "span_es": "No nos cansemos, pues, de hacer bien; porque a su tiempo segaremos, si no desmayamos.",
+   "ref_es": "Gálatas 6:9",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Epigraph explicitly attributed to Galatians 6:9 and is that verse in NKJV; the KJV wording differs only as the translation gap predicts."
+  },
+  {
+   "chapter": "ch6",
+   "ref": "Matthew 11:28",
+   "book": "Matthew",
+   "chap": 11,
+   "verse": 28,
+   "span_en": "Come to Me, all you who labor and are heavy laden,",
+   "span_es": "Venid a mí todos los que estáis trabajados y cargados",
+   "ref_es": "Mateo 11:28",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Direct quotation ('When He says, \"...\"') of Matthew 11:28a in NKJV, asserted as Christ's invitation and substantial enough to cite."
+  },
+  {
+   "chapter": "ch7",
+   "ref": "1 Thessalonians 5:6",
+   "book": "1 Thessalonians",
+   "chap": 5,
+   "verse": 6,
+   "span_en": "Therefore let us not sleep, as others do, but let us watch and be sober.",
+   "span_es": "Por tanto, no durmamos como los demás, sino velemos y seamos sobrios.",
+   "ref_es": "1 Tesalonicenses 5:6",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Epigraph explicitly cited to 1 Thessalonians 5:6 and matches the KJV almost word for word; uniquely that verse."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "John 10:27",
+   "book": "John",
+   "chap": 10,
+   "verse": 27,
+   "span_en": "My sheep hear My voice, and I know them",
+   "span_es": "Mis ovejas oyen mi voz, y yo las conozco",
+   "ref_es": "Juan 10:27",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Explicitly offered as 'one simple line of Scripture to carry' and reproduces John 10:27 verbatim; the phrase is unique to that verse."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "2 Corinthians 12:9",
+   "book": "2 Corinthians",
+   "chap": 12,
+   "verse": 9,
+   "span_en": "My strength is made perfect in weakness.",
+   "span_es": "Mi poder se perfecciona en la debilidad.",
+   "ref_es": "2 Corintios 12:9",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Quoted verbatim as Christ's answer, which is exactly its function in 2 Corinthians 12:9 ('he said unto me'); the phrase is unique to that verse."
+  },
+  {
+   "chapter": "prologue",
+   "ref": "Matthew 24:6",
+   "book": "Matthew",
+   "chap": 24,
+   "verse": 6,
+   "span_en": "See that you are not troubled",
+   "span_es": "Mirad que no os turbéis",
+   "ref_es": "Mateo 24:6",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Quoted in-text with the author's own explicit '(Matthew 24:6)' attribution and it is that clause in meaning."
+  },
+  {
+   "chapter": "intro",
+   "ref": "Luke 21:26",
+   "book": "Luke",
+   "chap": 21,
+   "verse": 26,
+   "span_en": "hearts would fail from fear",
+   "span_es": "los corazones desfallecerían de miedo",
+   "ref_es": "Lucas 21:26",
+   "kind": "allusion",
+   "verdict": "CONFIRM",
+   "why": "Reproduces the verbally distinctive 'hearts failing them for fear' of Luke 21:26, a clause found in no other verse, and is offered as Jesus' recalled words."
+  },
+  {
+   "chapter": "ch1",
+   "ref": "Romans 12:15",
+   "book": "Romans",
+   "chap": 12,
+   "verse": 15,
+   "span_en": "He told you to weep with those who weep, yes.",
+   "span_es": "Te dijo que lloraras con los que lloran, sí.",
+   "ref_es": "Romanos 12:15",
+   "kind": "allusion",
+   "verdict": "CONFIRM",
+   "why": "Reproduces the verbatim clause 'weep with them that weep', unique to Romans 12:15, and is asserted as a command God actually gave."
+  },
+  {
+   "chapter": "ch1",
+   "ref": "Matthew 24:6",
+   "book": "Matthew",
+   "chap": 24,
+   "verse": 6,
+   "span_en": "See that you are not troubled.",
+   "span_es": "Mirad que no os turbéis.",
+   "ref_es": "Mateo 24:6",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "This is the true clause of Matthew 24:6 restored in quotation after the two mock inversions, not one of them."
+  },
+  {
+   "chapter": "ch2",
+   "ref": "John 10:27",
+   "book": "John",
+   "chap": 10,
+   "verse": 27,
+   "span_en": "My sheep hear My voice, and I know them, and they follow Me.",
+   "span_es": "Mis ovejas oyen mi voz, y yo las conozco, y me siguen.",
+   "ref_es": "Juan 10:27",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Verbatim John 10:27, quoted as Jesus' words and carrying the author's own '— John 10:27 (NKJV)' attribution at the epigraph."
+  },
+  {
+   "chapter": "ch3",
+   "ref": "Galatians 6:2",
+   "book": "Galatians",
+   "chap": 6,
+   "verse": 2,
+   "span_en": "bear one another’s burdens",
+   "span_es": "los unos las cargas de los otros",
+   "ref_es": "Gálatas 6:2",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Explicitly asserted as Scripture ('The Bible does tell us to'), quoted with 'and so fulfill the law of Christ', and unique to Galatians 6:2."
+  },
+  {
+   "chapter": "ch3",
+   "ref": "Matthew 11:28",
+   "book": "Matthew",
+   "chap": 11,
+   "verse": 28,
+   "span_en": "Come to Me, all you who labor and are heavy laden, and I will give you rest,",
+   "span_es": "Venid a mí todos los que estáis trabajados y cargados, y yo os haré descansar,",
+   "ref_es": "Mateo 11:28",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Attributed directly to Jesus and quoted; it is Matthew 11:28 in meaning and wording."
+  },
+  {
+   "chapter": "ch4",
+   "ref": "Matthew 6:34",
+   "book": "Matthew",
+   "chap": 6,
+   "verse": 34,
+   "span_en": "sufficient for the day is its own trouble",
+   "span_es": "basta a cada día su propio mal",
+   "ref_es": "Mateo 6:34",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Quoted with 'Jesus says' and matches NKJV Matthew 6:34 exactly ('Sufficient for the day is its own trouble')."
+  },
+  {
+   "chapter": "ch6",
+   "ref": "Psalms 55:22",
+   "book": "Psalms",
+   "chap": 55,
+   "verse": 22,
+   "span_en": "Cast your burden on the LORD, And He shall sustain you; He shall never permit the righteous to be moved.",
+   "span_es": "Echa sobre Jehová tu carga, y él te sustentará; No dejará para siempre caído al justo.",
+   "ref_es": "Salmos 55:22",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Epigraph quoted in full with the author's own 'Psalm 55:22 (NKJV)' attribution; it is that verse."
+  },
+  {
+   "chapter": "ch6",
+   "ref": "Matthew 11:30",
+   "book": "Matthew",
+   "chap": 11,
+   "verse": 30,
+   "span_en": "My yoke is easy and My burden is light.",
+   "span_es": "Mi yugo es fácil, y ligera mi carga.",
+   "ref_es": "Mateo 11:30",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Quoted and asserted as Christ's words in the same breath as the cross-bearing call; verbatim Matthew 11:30 and found nowhere else."
+  },
+  {
+   "chapter": "ch6",
+   "ref": "Matthew 11:28",
+   "book": "Matthew",
+   "chap": 11,
+   "verse": 28,
+   "span_en": "I will give you rest.",
+   "span_es": "Yo os haré descansar.",
+   "ref_es": "Mateo 11:28",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "The true promise restored in quotation against the mock version, pinned to Jesus by the Matthew 11:28 quotation four lines above; short but the signature clause of that verse, not a generic fragment."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "John 1:14",
+   "book": "John",
+   "chap": 1,
+   "verse": 14,
+   "span_en": "The Word became flesh and dwelt among us.",
+   "span_es": "El Verbo se hizo carne y habitó entre nosotros.",
+   "ref_es": "Juan 1:14",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Verbatim NKJV John 1:14, unmistakable and unique, asserted as the account Scripture gives of the incarnation."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "Psalms 103:14",
+   "book": "Psalms",
+   "chap": 103,
+   "verse": 14,
+   "span_en": "He knows your frame. He remembers that you are dust.",
+   "span_es": "Él conoce tu condición. Recuerda que eres polvo.",
+   "ref_es": "Salmos 103:14",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Near-verbatim Psalm 103:14 with only our/your shifted for direct address; the frame-and-dust pairing occurs in no other verse."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "Psalms 55:22",
+   "book": "Psalms",
+   "chap": 55,
+   "verse": 22,
+   "span_en": "Cast your burden on the LORD, and He shall sustain you",
+   "span_es": "Echa sobre Jehová tu carga, y él te sustentará",
+   "ref_es": "Salmos 55:22",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Expressly named as 'one simple line of Scripture' and quoted; verbatim NKJV Psalm 55:22."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "Matthew 28:20",
+   "book": "Matthew",
+   "chap": 28,
+   "verse": 20,
+   "span_en": "He promised that He would be with you always, even to the end of the age.",
+   "span_es": "Prometió que estaría contigo siempre, hasta el fin del mundo.",
+   "ref_es": "Mateo 28:20",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Reported speech that still carries the distinctive NKJV tail 'always, even to the end of the age', unique to Matthew 28:20, and is asserted as a promise He made."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "John 6:20",
+   "book": "John",
+   "chap": 6,
+   "verse": 20,
+   "span_en": "It is I; do not be afraid.",
+   "span_es": "Yo soy; no temáis.",
+   "ref_es": "Juan 6:20",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "The span is the whole of John 6:20 exactly; Matthew 14:27 and Mark 6:50 prefix 'Be of good cheer!', which the span lacks, so John is the unique fit."
+  },
+  {
+   "chapter": "prologue",
+   "ref": "Matthew 24:7",
+   "book": "Matthew",
+   "chap": 24,
+   "verse": 7,
+   "span_en": "Nation rising against nation.",
+   "span_es": "Nación levantándose contra nación.",
+   "ref_es": "Mateo 24:7",
+   "kind": "allusion",
+   "verdict": "CONFIRM",
+   "why": "Near-verbatim clause of Matthew 24:7 inside a list the author explicitly frames as \"Jesus' words about the last days,\" and the book's Matthew 24 title-verse frame pins the synoptic parallel to Matthew."
+  },
+  {
+   "chapter": "prologue",
+   "ref": "Matthew 24:6",
+   "book": "Matthew",
+   "chap": 24,
+   "verse": 6,
+   "span_en": "Do not be troubled.",
+   "span_es": "No os turbéis.",
+   "ref_es": "Mateo 24:6",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Quoted and attributed to Jesus, and the surrounding \"He did not say, 'See that you...'\" pattern pins it to Matthew 24:6 rather than John 14:1."
+  },
+  {
+   "chapter": "intro",
+   "ref": "Matthew 24:6",
+   "book": "Matthew",
+   "chap": 24,
+   "verse": 6,
+   "span_en": "See that you are not troubled.",
+   "span_es": "Mirad que no os turbéis.",
+   "ref_es": "Mateo 24:6",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Verbatim NKJV Matthew 24:6 in quotation marks and asserted as Christ's words — the book's title verse."
+  },
+  {
+   "chapter": "ch1",
+   "ref": "Matthew 6:34",
+   "book": "Matthew",
+   "chap": 6,
+   "verse": 34,
+   "span_en": "Do not worry about tomorrow.",
+   "span_es": "No os afanéis por el día de mañana.",
+   "ref_es": "Mateo 6:34",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Complete imperative clause of Matthew 6:34, in quotation marks and expressly attributed to Jesus — not a clipped fragment."
+  },
+  {
+   "chapter": "ch1",
+   "ref": "Matthew 28:18",
+   "book": "Matthew",
+   "chap": 28,
+   "verse": 18,
+   "span_en": "All authority has been given to Me in heaven and on earth.",
+   "span_es": "Toda potestad me es dada en el cielo y en la tierra.",
+   "ref_es": "Mateo 28:18",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Verbatim NKJV Matthew 28:18, quoted and attributed to Jesus."
+  },
+  {
+   "chapter": "ch1",
+   "ref": "Colossians 3:3",
+   "book": "Colossians",
+   "chap": 3,
+   "verse": 3,
+   "span_en": "Your life is hidden with Christ in God.",
+   "span_es": "Tu vida está escondida con Cristo en Dios.",
+   "ref_es": "Colosenses 3:3",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Near-verbatim Colossians 3:3 asserted as truth; \"your life is hidden with Christ in God\" occurs nowhere else in Scripture."
+  },
+  {
+   "chapter": "ch2",
+   "ref": "Psalms 103:14",
+   "book": "Psalms",
+   "chap": 103,
+   "verse": 14,
+   "span_en": "He knows you are dust.",
+   "span_es": "Él sabe que eres polvo.",
+   "ref_es": "Salmos 103:14",
+   "kind": "allusion",
+   "verdict": "CONFIRM",
+   "why": "Restates the actual proposition of Psalms 103:14, which is the unique locus of God knowing our frame and remembering we are dust."
+  },
+  {
+   "chapter": "ch3",
+   "ref": "1 Peter 5:7",
+   "book": "1 Peter",
+   "chap": 5,
+   "verse": 7,
+   "span_en": "Casting all your care upon Him, for He cares for you.",
+   "span_es": "Echando toda vuestra ansiedad sobre él, porque él tiene cuidado de vosotros.",
+   "ref_es": "1 Pedro 5:7",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Epigraph quoted verbatim in NKJV and explicitly self-cited by the author as 1 Peter 5:7."
+  },
+  {
+   "chapter": "ch3",
+   "ref": "1 Peter 5:7",
+   "book": "1 Peter",
+   "chap": 5,
+   "verse": 7,
+   "span_en": "cast your care upon Him",
+   "span_es": "echa tu ansiedad sobre él",
+   "ref_es": "1 Pedro 5:7",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Presented in quotation marks as a verse the reader \"hears,\" and the distinctive care/Him construction is uniquely 1 Peter 5:7."
+  },
+  {
+   "chapter": "ch3",
+   "ref": "Matthew 11:29",
+   "book": "Matthew",
+   "chap": 11,
+   "verse": 29,
+   "span_en": "Take My yoke upon you and learn from Me… For My yoke is easy and My burden is light.",
+   "span_es": "Llevad mi yugo sobre vosotros, y aprended de mí… porque mi yugo es fácil, y ligera mi carga.",
+   "ref_es": "Mateo 11:29",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Quoted and attributed to Jesus; the elision spans Matthew 11:29-30 and 11:29 is the correct range start."
+  },
+  {
+   "chapter": "ch4",
+   "ref": "Matthew 6:34",
+   "book": "Matthew",
+   "chap": 6,
+   "verse": 34,
+   "span_en": "Therefore do not worry about tomorrow, for tomorrow will worry about its own things. Sufficient for the day is its own trouble.",
+   "span_es": "Así que, no os afanéis por el día de mañana, porque el día de mañana traerá su afán. Basta a cada día su propio mal.",
+   "ref_es": "Mateo 6:34",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Epigraph quoted verbatim in NKJV and explicitly self-cited by the author as Matthew 6:34."
+  },
+  {
+   "chapter": "ch5",
+   "ref": "Matthew 25:21",
+   "book": "Matthew",
+   "chap": 25,
+   "verse": 21,
+   "span_en": "you were faithful over a few things, I will make you ruler over many things. Enter into the joy of your lord.",
+   "span_es": "sobre poco has sido fiel, sobre mucho te pondré; entra en el gozo de tu señor.",
+   "ref_es": "Mateo 25:21",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Not the two-talent trap — the author generalizes across both servants (\"He praised the ones who were faithful\"), so the first and standard instance, Matthew 25:21, is correct."
+  },
+  {
+   "chapter": "ch5",
+   "ref": "Matthew 25:21",
+   "book": "Matthew",
+   "chap": 25,
+   "verse": 21,
+   "span_en": "Well done, good and faithful servant",
+   "span_es": "Bien, buen siervo y fiel",
+   "ref_es": "Mateo 25:21",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Same generalized commendation quoted and attributed to Christ; Matthew 25:21 is the correct first instance."
+  },
+  {
+   "chapter": "ch6",
+   "ref": "Psalms 55:22",
+   "book": "Psalms",
+   "chap": 55,
+   "verse": 22,
+   "span_en": "Cast your burden on the LORD, And He shall sustain you.",
+   "span_es": "Echa sobre Jehová tu carga, y él te sustentará.",
+   "ref_es": "Salmos 55:22",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Verbatim NKJV first clause of Psalms 55:22, explicitly re-quoted as \"the verse at the top of this chapter.\""
+  },
+  {
+   "chapter": "ch8",
+   "ref": "Genesis 1:27",
+   "book": "Genesis",
+   "chap": 1,
+   "verse": 27,
+   "span_en": "He formed human beings in His image",
+   "span_es": "formó a los seres humanos a su imagen",
+   "ref_es": "Génesis 1:27",
+   "kind": "allusion",
+   "verdict": "CONFIRM",
+   "why": "States the act of Genesis 1:27 (God created man in His own image) rather than the intent of 1:26; unmistakable and uniquely placed."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "1 Peter 2:24",
+   "book": "1 Peter",
+   "chap": 2,
+   "verse": 24,
+   "span_en": "the weight of our sin in His own body on the cross",
+   "span_es": "el peso de nuestro pecado en su propio cuerpo sobre la cruz",
+   "ref_es": "1 Pedro 2:24",
+   "kind": "allusion",
+   "verdict": "CONFIRM",
+   "why": "The distinctive \"in His own body\" sin-bearing construction is unique to 1 Peter 2:24; cross/tree is the ordinary NKJV-era rendering difference."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "John 19:30",
+   "book": "John",
+   "chap": 19,
+   "verse": 30,
+   "span_en": "It is finished.",
+   "span_es": "Consumado es.",
+   "ref_es": "Juan 19:30",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Quoted, attributed to Christ, and uniquely John 19:30 — the saying itself, not a generic fragment."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "Hebrews 1:3",
+   "book": "Hebrews",
+   "chap": 1,
+   "verse": 3,
+   "span_en": "He can uphold the universe by the word of His power",
+   "span_es": "Puede sostener el universo con la palabra de su poder",
+   "ref_es": "Hebreos 1:3",
+   "kind": "allusion",
+   "verdict": "CONFIRM",
+   "why": "\"by the word of His power\" upholding all things is verbatim-distinctive to Hebrews 1:3 and occurs nowhere else."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "Matthew 6:34",
+   "book": "Matthew",
+   "chap": 6,
+   "verse": 34,
+   "span_en": "Therefore do not worry about tomorrow.",
+   "span_es": "Así que, no os afanéis por el día de mañana",
+   "ref_es": "Mateo 6:34",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Verbatim NKJV opening of Matthew 6:34, quoted and expressly offered as \"one simple line of Scripture to carry.\""
+  },
+  {
+   "chapter": "ch8",
+   "ref": "Romans 8:38",
+   "book": "Romans",
+   "chap": 8,
+   "verse": 38,
+   "span_en": "He promised that nothing — not things present, not things to come — could separate you from the love of God in Him.",
+   "span_es": "Prometió que nada —ni lo presente, ni lo por venir— podría separarte del amor de Dios en Él.",
+   "ref_es": "Romanos 8:38",
+   "kind": "allusion",
+   "verdict": "CONFIRM",
+   "why": "Unmistakable restatement of the chapter epigraph Romans 8:38-39, reported as a promise of Scripture; 8:38 is the correct range start."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "2 Corinthians 12:9",
+   "book": "2 Corinthians",
+   "chap": 12,
+   "verse": 9,
+   "span_en": "My grace is sufficient for you.",
+   "span_es": "Bástate mi gracia.",
+   "ref_es": "2 Corintios 12:9",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Verbatim NKJV 2 Corinthians 12:9, quoted as the Lord's answer."
+  },
+  {
+   "chapter": "prologue",
+   "ref": "Matthew 11:28",
+   "book": "Matthew",
+   "chap": 11,
+   "verse": 28,
+   "span_en": "Come to Me, all you who labor and are heavy laden, and I will give you rest",
+   "span_es": "Venid a mí todos los que estáis trabajados y cargados, y yo os haré descansar",
+   "ref_es": "Mateo 11:28",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Full NKJV of Matthew 11:28, in quotation marks, with the reference printed in-text by the author himself."
+  },
+  {
+   "chapter": "intro",
+   "ref": "Matthew 6:34",
+   "book": "Matthew",
+   "chap": 6,
+   "verse": 34,
+   "span_en": "Therefore do not worry about tomorrow, for tomorrow will worry about its own things. Sufficient for the day is its own trouble.",
+   "span_es": "Así que, no os afanéis por el día de mañana, porque el día de mañana traerá su afán. Basta a cada día su propio mal.",
+   "ref_es": "Mateo 6:34",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Epigraph reproducing Matthew 6:34 in full and citing it explicitly; NKJV/KJV wording differs but the meaning is verse-for-verse identical."
+  },
+  {
+   "chapter": "intro",
+   "ref": "Matthew 6:34",
+   "book": "Matthew",
+   "chap": 6,
+   "verse": 34,
+   "span_en": "Do not worry about tomorrow.",
+   "span_es": "No os afanéis por el día de mañana.",
+   "ref_es": "Mateo 6:34",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "A complete imperative sentence in quotation marks introduced by 'He said' — asserted as Christ's words and uniquely Matthew 6:34 (the 'tomorrow' clause has no other parallel)."
+  },
+  {
+   "chapter": "ch1",
+   "ref": "Matthew 24:6",
+   "book": "Matthew",
+   "chap": 24,
+   "verse": 6,
+   "span_en": "You will hear of wars and rumors of wars. See that you are not troubled; for all these things must come to pass, but the end is not yet.",
+   "span_es": "Y oiréis de guerras y rumores de guerras; mirad que no os turbéis, porque es necesario que todo esto acontezca; pero aún no es el fin.",
+   "ref_es": "Mateo 24:6",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Epigraph matching KJV Matthew 24:6 clause for clause and cited by the author as Matthew 24:6."
+  },
+  {
+   "chapter": "ch1",
+   "ref": "Matthew 28:20",
+   "book": "Matthew",
+   "chap": 28,
+   "verse": 20,
+   "span_en": "Lo, I am with you always, even to the end of the age.",
+   "span_es": "He aquí, yo estoy con vosotros todos los días, hasta el fin del mundo.",
+   "ref_es": "Mateo 28:20",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Verbatim NKJV of the closing clause of Matthew 28:20, quoted and attributed to Jesus alongside Matthew 28:18 in the same sentence."
+  },
+  {
+   "chapter": "ch2",
+   "ref": "John 14:27",
+   "book": "John",
+   "chap": 14,
+   "verse": 27,
+   "span_en": "Let not your heart be troubled, neither let it be afraid",
+   "span_es": "No se turbe vuestro corazón, ni tenga miedo",
+   "ref_es": "Juan 14:27",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Exact NKJV of the close of John 14:27; 'neither let it be afraid' is absent from 14:1, so verse 27 is uniquely right, and the surrounding text tells the reader to open John 14."
+  },
+  {
+   "chapter": "ch3",
+   "ref": "Galatians 6:2",
+   "book": "Galatians",
+   "chap": 6,
+   "verse": 2,
+   "span_en": "bear one another’s burdens, and so fulfill the law of Christ.",
+   "span_es": "los unos las cargas de los otros, y cumplid así la ley de Cristo.",
+   "ref_es": "Gálatas 6:2",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Introduced as 'The Bible does tell us to' and reproduces Galatians 6:2 verbatim, including the distinctive 'law of Christ'."
+  },
+  {
+   "chapter": "ch3",
+   "ref": "1 Peter 2:24",
+   "book": "1 Peter",
+   "chap": 2,
+   "verse": 24,
+   "span_en": "He already carried the sin of the world in His own body on the tree.",
+   "span_es": "Él ya cargó el pecado del mundo en su propio cuerpo sobre el madero.",
+   "ref_es": "1 Pedro 2:24",
+   "kind": "allusion",
+   "verdict": "CONFIRM",
+   "why": "'in His own body on the tree' is verbatim and unique to 1 Peter 2:24 — no other verse carries that clause, so the echo is unmistakable rather than diffuse."
+  },
+  {
+   "chapter": "ch3",
+   "ref": "Psalms 121:4",
+   "book": "Psalms",
+   "chap": 121,
+   "verse": 4,
+   "span_en": "neither slumbers nor sleeps",
+   "span_es": "ni se adormece ni duerme",
+   "ref_es": "Salmos 121:4",
+   "kind": "allusion",
+   "verdict": "CONFIRM",
+   "why": "'neither slumbers nor sleeps' is the distinctive verb pair found only at Psalms 121:4 and is applied here to God exactly as the psalm does."
+  },
+  {
+   "chapter": "ch4",
+   "ref": "Matthew 6:34",
+   "book": "Matthew",
+   "chap": 6,
+   "verse": 34,
+   "span_en": "do not worry about tomorrow",
+   "span_es": "no os afanéis por el día de mañana",
+   "ref_es": "Mateo 6:34",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Quoted in quotation marks under 'When Jesus says' — a genuine attributed quotation of the NKJV imperative that opens Matthew 6:34, distinct from the chapter epigraph occurrence."
+  },
+  {
+   "chapter": "ch6",
+   "ref": "Matthew 11:29",
+   "book": "Matthew",
+   "chap": 11,
+   "verse": 29,
+   "span_en": "gentle and lowly in heart",
+   "span_es": "manso y humilde de corazón",
+   "ref_es": "Mateo 11:29",
+   "kind": "allusion",
+   "verdict": "CONFIRM",
+   "why": "Verbatim NKJV of Matthew 11:29's self-description, applied to Jesus by name; the phrase belongs to no other verse."
+  },
+  {
+   "chapter": "ch7",
+   "ref": "Psalms 121:4",
+   "book": "Psalms",
+   "chap": 121,
+   "verse": 4,
+   "span_en": "He Himself never slumbers nor sleeps",
+   "span_es": "Él mismo no se adormece ni duerme",
+   "ref_es": "Salmos 121:4",
+   "kind": "allusion",
+   "verdict": "CONFIRM",
+   "why": "Reproduces the distinctive 'slumbers nor sleeps' pair unique to Psalms 121:4, predicated of God exactly as the psalm has it."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "Romans 8:38",
+   "book": "Romans",
+   "chap": 8,
+   "verse": 38,
+   "span_en": "For I am persuaded that neither death nor life… nor things present nor things to come… shall be able to separate us from the love of God which is in Christ Jesus our Lord.",
+   "span_es": "Por lo cual estoy seguro de que ni la muerte, ni la vida… ni lo presente, ni lo por venir… nos podrá separar del amor de Dios, que es en Cristo Jesús Señor nuestro.",
+   "ref_es": "Romanos 8:38",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Epigraph quoting Romans 8:38-39 with elisions marked, cited by the author as that range; 8:38 is the legitimate range start."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "John 19:30",
+   "book": "John",
+   "chap": 19,
+   "verse": 30,
+   "span_en": "It is finished,",
+   "span_es": "Consumado es",
+   "ref_es": "Juan 19:30",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Christ's cry quoted in quotation marks and attributed ('When He cried'), verbatim and unique to John 19:30."
+  },
+  {
+   "chapter": "ch8",
+   "ref": "Revelation 21:5",
+   "book": "Revelation",
+   "chap": 21,
+   "verse": 5,
+   "span_en": "Behold, I make all things new.",
+   "span_es": "He aquí, yo hago nuevas todas las cosas.",
+   "ref_es": "Apocalipsis 21:5",
+   "kind": "quote",
+   "verdict": "CONFIRM",
+   "why": "Verbatim Revelation 21:5, quoted as one of 'two sentences spoken by the same Lord' — asserted as Scripture and uniquely placed."
+  }
+ ],
+ "not_linked": [
+  {
+   "chapter": "prologue",
+   "span": "Hearts failing from fear because of the things coming on the earth.",
+   "considered_ref": "Luke 21:26",
+   "rejected_as": "allusion_only",
+   "why": "One fragment plucked out of a staccato narrated list of remembered Olivet motifs ('Wars and rumors of wars. Nation rising against nation...') — it summarizes rather than cites, and singling out this line for a link is arbitrary."
+  },
+  {
+   "chapter": "prologue",
+   "span": "Rest.",
+   "considered_ref": "Matthew 11:28",
+   "rejected_as": "too_thin",
+   "why": "A bare one-word 'Rest.' is the author's compression, not a quotation of Matthew 11:28 — exactly the over-reach the too-thin rule names."
+  },
+  {
+   "chapter": "intro",
+   "span": "there would be wars, rumors of wars, lawlessness, love growing cold",
+   "considered_ref": "Matthew 24:6",
+   "rejected_as": "allusion_only",
+   "why": "Narrated summary ('You remember Him saying there would be...') that composites Matthew 24:6 with 24:12; no single verse is being quoted, so 24:6 cannot be uniquely justified."
+  },
+  {
+   "chapter": "ch1",
+   "span": "You remember Him mentioning wars and rumors of wars.",
+   "considered_ref": "Matthew 24:6",
+   "rejected_as": "allusion_only",
+   "why": "The span is the narration frame itself ('You remember Him mentioning...'), describing Christ's words rather than quoting them."
+  },
+  {
+   "chapter": "ch1",
+   "span": "He told you to love your neighbor, yes.",
+   "considered_ref": "Matthew 22:39",
+   "rejected_as": "allusion_only",
+   "why": "Narration ('He told you to love your neighbor, yes'), and 'love your neighbour' occurs in Leviticus 19:18, Matthew 5:43/19:19/22:39, Mark 12:31, Luke 10:27, Romans 13:9, Galatians 5:14 and James 2:8 — nothing pins it to 22:39."
+  },
+  {
+   "chapter": "ch1",
+   "span": "But you do not belong to the world.",
+   "considered_ref": "John 15:19",
+   "rejected_as": "ambiguous",
+   "why": "Author's own prose, and 'not of the world' is equally John 15:19, 17:14 and 17:16 — the reference cannot be uniquely justified."
+  },
+  {
+   "chapter": "ch3",
+   "span": "came back with the keys",
+   "considered_ref": "Revelation 1:18",
+   "rejected_as": "allusion_only",
+   "why": "A five-word clip of the author's own narration of the descent and resurrection; it gestures at 'the keys of hell and of death' but quotes nothing and reads as prose, not citation."
+  },
+  {
+   "chapter": "ch3",
+   "span": "He has counted every one of them",
+   "considered_ref": "Psalms 56:8",
+   "rejected_as": "allusion_only",
+   "why": "Author's prose; Psalm 56:8 says tears are put in a bottle and written in a book — 'counted every one' is an interpretive gloss that also matches Matthew 10:30's numbering motif, so it is neither quotation nor unique."
+  },
+  {
+   "chapter": "ch4",
+   "span": "He used birds and lilies",
+   "considered_ref": "Matthew 6:26",
+   "rejected_as": "allusion_only",
+   "why": "Pure narration about Christ's teaching method, and it spans birds (6:26) and lilies (6:28) at once — describing, not quoting."
+  },
+  {
+   "chapter": "ch5",
+   "span": "like a Father with His child, like a Shepherd with His sheep, like a Friend beside the road",
+   "considered_ref": "Psalms 23:1",
+   "rejected_as": "ambiguous",
+   "why": "Diffuse triple simile (Father/Shepherd/Friend) of the author's own making — the shepherd clause alone could be Psalm 23, John 10:11 or Isaiah 40:11, and no ref is justified."
+  },
+  {
+   "chapter": "ch5",
+   "span": "remind me that You are gentle and that You carry me",
+   "considered_ref": "Matthew 11:29",
+   "rejected_as": "not_scripture",
+   "why": "This sits inside the author's prayer and is his own composite petition, not a quotation of Matthew 11:29."
+  },
+  {
+   "chapter": "ch6",
+   "span": "take up a cross and follow Him",
+   "considered_ref": "Matthew 16:24",
+   "rejected_as": "allusion_only",
+   "why": "Narration ('Jesus does tell us to take up a cross'), and the saying stands in Matthew 10:38 and 16:24, Mark 8:34, Luke 9:23 and 14:27 — no basis for pinning 16:24."
+  },
+  {
+   "chapter": "ch7",
+   "span": "None of this surprises God. He told you ahead of time so you would not lose heart.",
+   "considered_ref": "Mark 13:23",
+   "rejected_as": "not_scripture",
+   "why": "The quotation marks hold the author's own paraphrase of what the prophecies collectively 'say' — no verse says this; the reader's own note concedes it is not a quotation."
+  },
+  {
+   "chapter": "ch7",
+   "span": "went to weddings",
+   "considered_ref": "John 2:2",
+   "rejected_as": "allusion_only",
+   "why": "Two words of narration inside a list of Christ's ordinary human acts; it describes rather than cites, and 'weddings' plural is not the single Cana verse."
+  },
+  {
+   "chapter": "ch7",
+   "span": "Death dies.",
+   "considered_ref": "1 Corinthians 15:26",
+   "rejected_as": "too_thin",
+   "why": "A two-word aphorism in the author's own compressed list; far too thin to hang a citation on, and it equally echoes Revelation 20:14, 21:4 and Isaiah 25:8."
+  },
+  {
+   "chapter": "ch7",
+   "span": "not to let our hearts be troubled or afraid",
+   "considered_ref": "John 14:27",
+   "rejected_as": "not_scripture",
+   "why": "Reported speech inside the author's prayer ('You also told us not to...') — his words about the verse, not the verse."
+  },
+  {
+   "chapter": "ch8",
+   "span": "before the foundation of the world",
+   "considered_ref": "Ephesians 1:4",
+   "rejected_as": "ambiguous",
+   "why": "A bare prepositional phrase in the author's prose, and 'before the foundation of the world' is equally John 17:24 and 1 Peter 1:20 (cf. Matthew 25:34) — Ephesians 1:4 cannot be uniquely justified."
+  },
+  {
+   "chapter": "ch8",
+   "span": "Sin entered. Shame followed. Death slipped in like a shadow at noon.",
+   "considered_ref": "Romans 5:12",
+   "rejected_as": "allusion_only",
+   "why": "The author's own poetic retelling of the Fall ('like a shadow at noon' is his image, not Paul's); it narrates Genesis 3 rather than citing Romans 5:12."
+  },
+  {
+   "chapter": "ch8",
+   "span": "to prepare a place for you",
+   "considered_ref": "John 14:2",
+   "rejected_as": "allusion_only",
+   "why": "A clause folded into the author's narration of the ascension, not a quotation; the phrase also recurs in John 14:3, so even the verse number is not clean."
+  },
+  {
+   "chapter": "ch8",
+   "span": "The God who spoke galaxies into being",
+   "considered_ref": "Psalms 33:9",
+   "rejected_as": "allusion_only",
+   "why": "The author's own figure ('spoke galaxies into being' — a word absent from Scripture); creation-by-speech is Genesis 1, Psalm 33:6/9 and Hebrews 11:3 alike, so nothing cites Psalm 33:9."
+  },
+  {
+   "chapter": "ch8",
+   "span": "bent down to wash His friends’ feet",
+   "considered_ref": "John 13:5",
+   "rejected_as": "allusion_only",
+   "why": "Narration of the foot-washing scene, not a quotation of it; the act spans John 13:4-5 and is recalled at 13:12, so linking 13:5 to the author's sentence over-reaches."
+  },
+  {
+   "chapter": "ch8",
+   "span": "Part of being “not troubled” is not pretending the world is fine.",
+   "considered_ref": "Matthew 24:6",
+   "rejected_as": "too_thin",
+   "why": "The author's own commentary sentence; the only scriptural material is the two-word phrase 'not troubled' in quotes, which is far too thin to carry a citation."
+  },
+  {
+   "chapter": "ch8",
+   "span": "The Shepherd does not abandon a sheep that keeps needing rescue.",
+   "considered_ref": "Luke 15:4",
+   "rejected_as": "ambiguous",
+   "why": "Author's prose about the Shepherd's patience; the lost-sheep parable stands in both Luke 15:4 and Matthew 18:12, and the sentence is closer to John 10 shepherd imagery than to either parable's wording."
+  },
+  {
+   "chapter": "ch8",
+   "span": "Sin has separated you from Him.",
+   "considered_ref": "Isaiah 59:2",
+   "rejected_as": "allusion_only",
+   "why": "A gospel-presentation statement in the author's own voice, not a citation of Isaiah 59:2 (which speaks of iniquities hiding God's face, in the plural second person to Israel)."
+  },
+  {
+   "chapter": "ch8",
+   "span": "You are the One who holds all things together",
+   "considered_ref": "Colossians 1:17",
+   "rejected_as": "not_scripture",
+   "why": "Sits inside the author's closing prayer as his address to God, not as quoted Scripture; it also echoes Hebrews 1:3 as readily as Colossians 1:17."
+  },
+  {
+   "chapter": "prologue",
+   "span": "Wars and rumors of wars.",
+   "considered_ref": "Matthew 24:6",
+   "rejected_as": "ambiguous",
+   "why": "A narration fragment in a composite Olivet list (Matthew, Luke) and the clause is equally Mark 13:7 — nothing pins it to Matthew 24:6, which the author properly quotes with a citation two paragraphs later anyway."
+  },
+  {
+   "chapter": "prologue",
+   "span": "the kind of peace He gives in the middle of real trouble",
+   "considered_ref": "John 16:33",
+   "rejected_as": "allusion_only",
+   "why": "The author's own prose describing the theme of the book, a composite of John 14:27 and 16:33, quoting neither."
+  },
+  {
+   "chapter": "intro",
+   "span": "You are not the One holding all things together.",
+   "considered_ref": "Colossians 1:17",
+   "rejected_as": "allusion_only",
+   "why": "The author's rhetorical negation aimed at the reader, not a quotation, and the image sits as much in Hebrews 1:3 as Colossians 1:17."
+  },
+  {
+   "chapter": "ch1",
+   "span": "You remember Him saying nation would rise against nation.",
+   "considered_ref": "Matthew 24:7",
+   "rejected_as": "ambiguous",
+   "why": "'Nation shall rise against nation' stands identically in Matthew 24:7, Mark 13:8 and Luke 21:10, and the surrounding list draws on Luke as well, so Matthew cannot be uniquely justified."
+  },
+  {
+   "chapter": "ch1",
+   "span": "I am the Alpha and the Omega, the Beginning and the End.",
+   "considered_ref": "Revelation 22:13",
+   "rejected_as": "ambiguous",
+   "why": "The span word-for-word matches NKJV Revelation 21:6, not the claimed 22:13 (whose NKJV order is 'the First and the Last, the Beginning and the End'), and 1:8 carries it too — context names no speaker that resolves it."
+  },
+  {
+   "chapter": "ch2",
+   "span": "Today, if you will hear His voice, do not harden your hearts.",
+   "considered_ref": "Hebrews 3:7",
+   "rejected_as": "ambiguous",
+   "why": "The claimed verse stops at 'hear His voice' — 'do not harden your hearts' is Hebrews 3:8 — and the whole span is equally NKJV Psalm 95:7-8, which Hebrews is itself quoting, with no context to pin either."
+  },
+  {
+   "chapter": "ch2",
+   "span": "Let not your heart be troubled.",
+   "considered_ref": "John 14:1",
+   "rejected_as": "ambiguous",
+   "why": "This exact clause opens both John 14:1 and John 14:27 identically, and the context (a one-line verse to whisper) supplies nothing to choose between them."
+  },
+  {
+   "chapter": "ch3",
+   "span": "You carried the sin of the world in Your own body.",
+   "considered_ref": "1 Peter 2:24",
+   "rejected_as": "not_scripture",
+   "why": "This is a line of the author's own closing prayer addressed to Christ, not a quotation of Scripture, and it blends 1 Peter 2:24 with John 1:29."
+  },
+  {
+   "chapter": "ch5",
+   "span": "Well done, good and faithful servant,",
+   "considered_ref": "Matthew 25:21",
+   "rejected_as": "ambiguous",
+   "why": "In NKJV the entire quoted stretch is word-for-word identical in Matthew 25:21 and 25:23, and the book generalizes to 'the ones who were faithful' — both servants — so neither verse can be uniquely justified."
+  },
+  {
+   "chapter": "ch5",
+   "span": "the God who loved you before the world began",
+   "considered_ref": "Ephesians 1:4",
+   "rejected_as": "allusion_only",
+   "why": "The author's own prose; 'before the world began' is 2 Timothy 1:9 / Titus 1:2 language and 'loved before the foundation of the world' is John 17:24 — Ephesians 1:4 says chosen, not loved."
+  },
+  {
+   "chapter": "ch7",
+   "span": "the Son of God gave Himself for you",
+   "considered_ref": "Galatians 2:20",
+   "rejected_as": "allusion_only",
+   "why": "The author's own doctrinal prose about the reader, shifting Paul's first-person 'gave himself for me' to 'for you'; it names the gospel rather than citing Galatians 2:20."
+  },
+  {
+   "chapter": "ch7",
+   "span": "watchmen on the wall",
+   "considered_ref": "Isaiah 62:6",
+   "rejected_as": "ambiguous",
+   "why": "A bare stock image the author flags only as something 'Scripture speaks of'; watchmen on walls sit in Isaiah 62:6, Isaiah 21:6, Ezekiel 33 and Habakkuk 2:1 alike."
+  },
+  {
+   "chapter": "ch7",
+   "span": "welcomed children",
+   "considered_ref": "Mark 10:14",
+   "rejected_as": "allusion_only",
+   "why": "Two words of narration inside a list of things Jesus did ('went to weddings, ate meals, laughed with friends'), describing an episode rather than citing Mark 10:14."
+  },
+  {
+   "chapter": "ch7",
+   "span": "The meek inherit the earth.",
+   "considered_ref": "Matthew 5:5",
+   "rejected_as": "ambiguous",
+   "why": "A summary line in an eschatological list, and 'the meek shall inherit the earth' is Psalm 37:11 as much as Matthew 5:5 — the beatitude form ('Blessed are the meek') is precisely what the span drops."
+  },
+  {
+   "chapter": "ch7",
+   "span": "You finished the work that truly needed to be finished",
+   "considered_ref": "John 19:30",
+   "rejected_as": "not_scripture",
+   "why": "A line of the author's own prayer, and a paraphrase that could equally point at John 17:4; it is not quoting 'It is finished.'"
+  },
+  {
+   "chapter": "ch8",
+   "span": "God made the world and called it good.",
+   "considered_ref": "Genesis 1:31",
+   "rejected_as": "allusion_only",
+   "why": "Narration retelling the creation account, and 'called it good' is the refrain of Genesis 1:4-25 rather than the 'very good' of 1:31."
+  },
+  {
+   "chapter": "ch8",
+   "span": "He intercedes for you.",
+   "considered_ref": "Romans 8:34",
+   "rejected_as": "ambiguous",
+   "why": "Four words of the author's prose, and Christ's intercession is stated in Hebrews 7:25 as squarely as Romans 8:34 — nothing pins the reference."
+  },
+  {
+   "chapter": "ch8",
+   "span": "He numbers your hairs.",
+   "considered_ref": "Matthew 10:30",
+   "rejected_as": "ambiguous",
+   "why": "'The very hairs of your head are all numbered' stands identically in Matthew 10:30 and Luke 12:7, and the span is the author's four-word prose, not a quotation."
+  },
+  {
+   "chapter": "ch8",
+   "span": "took time for one bleeding woman in a crowd",
+   "considered_ref": "Mark 5:25",
+   "rejected_as": "allusion_only",
+   "why": "Narration of an episode, not a citation, and the account runs in Matthew 9, Mark 5 and Luke 8 alike."
+  },
+  {
+   "chapter": "ch8",
+   "span": "when He wipes away every tear",
+   "considered_ref": "Revelation 21:4",
+   "rejected_as": "ambiguous",
+   "why": "'God shall wipe away all tears from their eyes' is word-for-word identical in Revelation 7:17 and 21:4 (cf. Isaiah 25:8), and the span is a subordinate clause of the author's prose."
+  },
+  {
+   "chapter": "prologue",
+   "span": "reminders of what your Shepherd actually said",
+   "considered_ref": "John 10:11",
+   "rejected_as": "allusion_only",
+   "why": "A title-epithet for Christ in the author's own prose, not a quotation, and \"Shepherd\" could equally point to Psalms 23:1, John 10:14, or Hebrews 13:20."
+  },
+  {
+   "chapter": "intro",
+   "span": "living in a world He already told you would shake",
+   "considered_ref": "Hebrews 12:26",
+   "rejected_as": "allusion_only",
+   "why": "Wholly the author's wording; \"a world He already told you would shake\" is too generic to be uniquely Hebrews 12:26 rather than the Olivet Discourse or Haggai 2:6."
+  },
+  {
+   "chapter": "ch1",
+   "span": "You remember hearing about earthquakes, pestilences, betrayals, love growing cold.",
+   "considered_ref": "Matthew 24:7",
+   "rejected_as": "allusion_only",
+   "why": "A narrated composite spanning Matthew 24:7, 24:10, and 24:12 — no single verse covers the span, and it describes rather than quotes."
+  },
+  {
+   "chapter": "ch2",
+   "span": "My sheep.",
+   "considered_ref": "John 10:27",
+   "rejected_as": "too_thin",
+   "why": "A bare two-word fragment — exactly the over-reach the protocol names; the full John 10:27 quotation two sentences earlier is the citable span, not this echo."
+  },
+  {
+   "chapter": "ch4",
+   "span": "Father to the fatherless and Provider to the hungry",
+   "considered_ref": "Psalms 68:5",
+   "rejected_as": "allusion_only",
+   "why": "The author's own descriptive composite — Psalms 68:5 covers only \"Father to the fatherless,\" while \"Provider to the hungry\" comes from Psalms 146:7; no single ref covers the span."
+  },
+  {
+   "chapter": "ch6",
+   "span": "stand in the gap",
+   "considered_ref": "Ezekiel 22:30",
+   "rejected_as": "allusion_only",
+   "why": "Quoted as a church catchphrase the reader \"hears\" — reported speech about Christian culture, not the author citing Ezekiel 22:30 as Scripture."
+  },
+  {
+   "chapter": "ch6",
+   "span": "the One whose shoulders never tire",
+   "considered_ref": "Isaiah 40:28",
+   "rejected_as": "allusion_only",
+   "why": "Entirely the author's image; \"shoulders\" appears nowhere in Isaiah 40:28 and the sentiment is too loose to pin to any verse."
+  },
+  {
+   "chapter": "ch7",
+   "span": "watch and pray.",
+   "considered_ref": "Matthew 26:41",
+   "rejected_as": "ambiguous",
+   "why": "A two-word phrase shared by Matthew 26:41, Mark 14:38, Mark 13:33, and Luke 21:36 — and the end-times watchfulness context actually fits Mark 13:33 better than the claimed Gethsemane verse."
+  },
+  {
+   "chapter": "ch7",
+   "span": "The Body of Christ is many members.",
+   "considered_ref": "1 Corinthians 12:12",
+   "rejected_as": "allusion_only",
+   "why": "The author's doctrinal paraphrase, not a quotation, and \"many members\" is shared by 1 Corinthians 12:12, 12:14, 12:20, and Romans 12:4."
+  },
+  {
+   "chapter": "ch7",
+   "span": "He wept over cities",
+   "considered_ref": "Luke 19:41",
+   "rejected_as": "allusion_only",
+   "why": "Narration inside a list of things Jesus did (\"went to weddings, ate meals\") — precisely the allusion pattern the protocol excludes, and the plural \"cities\" generalizes past Luke 19:41."
+  },
+  {
+   "chapter": "ch7",
+   "span": "Righteousness dwells.",
+   "considered_ref": "2 Peter 3:13",
+   "rejected_as": "too_thin",
+   "why": "A bare two-word fragment in a rhythmic summary list — an echo of 2 Peter 3:13, not a quotation of it."
+  },
+  {
+   "chapter": "ch7",
+   "span": "Help me to fix my eyes on You first",
+   "considered_ref": "Hebrews 12:2",
+   "rejected_as": "not_scripture",
+   "why": "This is a line of the author's own prayer addressed to God, not Scripture asserted as Scripture."
+  },
+  {
+   "chapter": "ch8",
+   "span": "He keeps your tears.",
+   "considered_ref": "Psalms 56:8",
+   "rejected_as": "too_thin",
+   "why": "A four-word poetic line in the author's own cadenced list; the bottle-and-book image of Psalms 56:8 is not actually quoted."
+  },
+  {
+   "chapter": "ch8",
+   "span": "Loved because Jesus gave Himself for you.",
+   "considered_ref": "Galatians 2:20",
+   "rejected_as": "ambiguous",
+   "why": "\"Loved... and gave Himself\" is shared with Ephesians 5:2 and 5:25 and Titus 2:14; the second-person \"for you\" does not pin the first-person Galatians 2:20."
+  },
+  {
+   "chapter": "ch8",
+   "span": "lays His life down for you",
+   "considered_ref": "John 10:11",
+   "rejected_as": "allusion_only",
+   "why": "Author's narration, and the wording \"lays His life down\" tracks John 10:15/10:17 more closely than the claimed 10:11 (\"gives His life\")."
+  },
+  {
+   "chapter": "prologue",
+   "span": "Lawlessness increasing.",
+   "considered_ref": "Matthew 24:12",
+   "rejected_as": "allusion_only",
+   "why": "A two-word item in the author's own paraphrased list of end-times signs that blends Matthew 24 with Luke 21:26 ('hearts failing from fear') — narration summarizing the discourse, not a citation of 24:12."
+  },
+  {
+   "chapter": "ch1",
+   "span": "He told you to carry a cross, yes.",
+   "considered_ref": "Matthew 16:24",
+   "rejected_as": "allusion_only",
+   "why": "The author's own narration about what God told us, and the cross-bearing command sits equally in Matthew 16:24, Mark 8:34, Luke 9:23 and Matthew 10:38 — no unique pin."
+  },
+  {
+   "chapter": "ch1",
+   "span": "worrying about tomorrow does not add a single hour to your life",
+   "considered_ref": "Matthew 6:27",
+   "rejected_as": "allusion_only",
+   "why": "The author's own prose, not a quotation, and the 'single hour' rendering matches neither KJV nor NKJV ('one cubit to his stature'), with Luke 12:25 an equal parallel."
+  },
+  {
+   "chapter": "ch1",
+   "span": "not worry about tomorrow",
+   "considered_ref": "Matthew 6:34",
+   "rejected_as": "too_thin",
+   "why": "A clipped four-word fragment the author puts in scare quotes to name his own chapter theme ('what it practically means to \"not worry about tomorrow\"'), not an assertion of Scripture."
+  },
+  {
+   "chapter": "ch2",
+   "span": "Trust Me.",
+   "considered_ref": "John 14:1",
+   "rejected_as": "too_thin",
+   "why": "Two words of the author's dramatized contrast against 'Trust me. Trust this channel.' — a paraphrase of Christ's voice, not a quotation of John 14:1."
+  },
+  {
+   "chapter": "ch4",
+   "span": "the Father who knows what we need",
+   "considered_ref": "Matthew 6:32",
+   "rejected_as": "ambiguous",
+   "why": "Descriptive prose about 'one of the most healing images Jesus gives us', and the wording actually fits Matthew 6:8 ('your Father knoweth what things ye have need of') at least as well as 6:32 — the ref cannot be uniquely justified."
+  },
+  {
+   "chapter": "ch5",
+   "span": "He is the One who spoke galaxies into being",
+   "considered_ref": "Psalms 33:9",
+   "rejected_as": "allusion_only",
+   "why": "A diffuse creation-by-speech image in the author's own prose that fits Genesis 1, Psalms 33:6/9 or Hebrews 11:3 equally; nothing quoted."
+  },
+  {
+   "chapter": "ch5",
+   "span": "Thank You that You finished the work I never could.",
+   "considered_ref": "John 19:30",
+   "rejected_as": "not_scripture",
+   "why": "This sentence sits inside the author's own prayer — it is his address to God, not a citation of John 19:30."
+  },
+  {
+   "chapter": "ch6",
+   "span": "be a watchman",
+   "considered_ref": "Ezekiel 33:7",
+   "rejected_as": "too_thin",
+   "why": "Three words quoted as a piece of ambient church slogan ('You hear phrases like...') rather than asserted as Scripture, and the watchman commission stands in both Ezekiel 3:17 and 33:7."
+  },
+  {
+   "chapter": "ch6",
+   "span": "He carried the curse.",
+   "considered_ref": "Galatians 3:13",
+   "rejected_as": "too_thin",
+   "why": "A four-word beat in the author's own anaphora list (wrath / curse / condemnation / shame) — his prose, far too slight to carry a Galatians 3:13 footnote."
+  },
+  {
+   "chapter": "ch7",
+   "span": "Paul wrote about not sleeping like those who are in the dark.",
+   "considered_ref": "1 Thessalonians 5:6",
+   "rejected_as": "allusion_only",
+   "why": "Explicit narration — 'Paul wrote about...' — describing the passage in the author's own words rather than quoting 1 Thessalonians 5:6."
+  },
+  {
+   "chapter": "ch7",
+   "span": "Tears are wiped away.",
+   "considered_ref": "Revelation 21:4",
+   "rejected_as": "allusion_only",
+   "why": "A three-word beat in the author's own summary of the ending (Christ returns / Evil is judged / Death dies), and the tear-wiping promise stands in Revelation 7:17 and Isaiah 25:8 as well as 21:4."
+  },
+  {
+   "chapter": "ch7",
+   "span": "You told us to watch and be ready",
+   "considered_ref": "Matthew 24:44",
+   "rejected_as": "not_scripture",
+   "why": "Sits inside the author's prayer under the 'Prayer' heading — his address to Jesus, and a composite of Matthew 24:42 and 24:44 at that."
+  },
+  {
+   "chapter": "ch8",
+   "span": "we listened to another voice and tried to define good and evil on our own terms",
+   "considered_ref": "Genesis 3:5",
+   "rejected_as": "allusion_only",
+   "why": "The author's own retelling of the Fall with no quoted words; 'knowing good and evil' spans Genesis 2:17, 3:5 and 3:22, so the ref is narration-driven rather than textual."
+  },
+  {
+   "chapter": "ch8",
+   "span": "He writes your name.",
+   "considered_ref": "Luke 10:20",
+   "rejected_as": "ambiguous",
+   "why": "Four words of the author's own rhetorical list; Luke 10:20 says names 'are written in heaven' — the image is equally Revelation 21:27 or Isaiah 49:16, so the ref cannot be pinned."
+  },
+  {
+   "chapter": "ch8",
+   "span": "Nothing in the future — no “things to come,” no system, no darkness, no headline, no collapse — can separate you from that love.",
+   "considered_ref": "Romans 8:38",
+   "rejected_as": "allusion_only",
+   "why": "The author's own application sentence with his own modern list inserted (headline, collapse, system) — it applies Romans 8:38-39 rather than quoting it."
+  },
+  {
+   "chapter": "ch8",
+   "span": "The One who invited you to cast your burdens on Him",
+   "considered_ref": "1 Peter 5:7",
+   "rejected_as": "ambiguous",
+   "why": "A composite: 'cast your burdens' is Psalms 55:22's noun, 'invited you' is Matthew 11:28, and 1 Peter 5:7 reads 'care', not 'burdens' — no single ref is justified."
+  },
+  {
+   "chapter": "ch8",
+   "span": "rejoices when you come back to His side",
+   "considered_ref": "Luke 15:7",
+   "rejected_as": "allusion_only",
+   "why": "The author's own shepherd prose, and its rejoicing-shepherd imagery fits Luke 15:5-6 better than the heaven-rejoices statement of 15:7."
+  },
+  {
+   "chapter": "ch8",
+   "span": "He came to save the lost, heal the broken, forgive sinners, and bring them into a real relationship with Himself.",
+   "considered_ref": "Luke 19:10",
+   "rejected_as": "allusion_only",
+   "why": "A four-verb composite of the author's own making (Luke 19:10 + Luke 4:18 + forgiveness + relationship); nothing is quoted and Luke 19:10 covers only the first clause."
+  },
+  {
+   "chapter": "ch8",
+   "span": "He will wipe away every tear.",
+   "considered_ref": "Revelation 21:4",
+   "rejected_as": "allusion_only",
+   "why": "Unquoted authorial prose, not a quotation despite the 'quote' label, and the promise is shared by Revelation 7:17 and Isaiah 25:8."
+  },
+  {
+   "chapter": "ch8",
+   "span": "someone He has already rejoiced over, someone He chose, someone He will not let go of",
+   "considered_ref": "Zephaniah 3:17",
+   "rejected_as": "ambiguous",
+   "why": "Three clauses drawn from three different places (Zephaniah 3:17, Ephesians 1:4, John 10:28) — a composite that no single ref can honestly carry."
+  }
+ ],
+ "glow": [
+  {
+   "chapter": "prologue",
+   "ref": "Matthew 11:28",
+   "ref_es": "Mateo 11:28",
+   "book": "Matthew",
+   "chap": 11,
+   "verse": 28,
+   "span_en": "Rest.",
+   "span_es": "Descansad.",
+   "verse_text_en": "Come unto me, all ye that labour and are heavy laden, and I will give you rest.",
+   "verse_text_es": "Vengan a mí todos los que están trabajados y cargados, y yo los haré descansar.",
+   "why": "short quote — glowbox reveals the verse instead of footnoting one word"
+  },
+  {
+   "chapter": "ch7",
+   "ref": "1 Corinthians 15:26",
+   "ref_es": "1 Corintios 15:26",
+   "book": "1 Corinthians",
+   "chap": 15,
+   "verse": 26,
+   "span_en": "Death dies.",
+   "span_es": "La muerte muere.",
+   "verse_text_en": "The last enemy that shall be destroyed is death.",
+   "verse_text_es": "Y el postrer enemigo que será destruido es la muerte.",
+   "why": "short quote — glowbox reveals the verse instead of footnoting one word"
+  },
+  {
+   "chapter": "ch2",
+   "ref": "John 10:27",
+   "ref_es": "Juan 10:27",
+   "book": "John",
+   "chap": 10,
+   "verse": 27,
+   "span_en": "My sheep.",
+   "span_es": "Mis ovejas.",
+   "verse_text_en": "My sheep hear my voice, and I know them, and they follow me:",
+   "verse_text_es": "Mis ovejas oyen mi voz, y yo las conozco, y me siguen;",
+   "why": "short quote — glowbox reveals the verse instead of footnoting one word"
+  },
+  {
+   "chapter": "ch7",
+   "ref": "2 Peter 3:13",
+   "ref_es": "2 Pedro 3:13",
+   "book": "2 Peter",
+   "chap": 3,
+   "verse": 13,
+   "span_en": "Righteousness dwells.",
+   "span_es": "La justicia habita.",
+   "verse_text_en": "Nevertheless we, according to his promise, look for new heavens and a new earth, wherein dwelleth righteousness.",
+   "verse_text_es": "Pero nosotros esperamos, según sus promesas, cielos nuevos y tierra nueva, en los cuales mora la justicia.",
+   "why": "short quote — glowbox reveals the verse instead of footnoting one word"
+  },
+  {
+   "chapter": "ch8",
+   "ref": "Psalms 56:8",
+   "ref_es": "Salmos 56:8",
+   "book": "Psalms",
+   "chap": 56,
+   "verse": 8,
+   "span_en": "He keeps your tears.",
+   "span_es": "Él guarda tus lágrimas.",
+   "verse_text_en": "Thou tellest my wanderings: put thou my tears into thy bottle: are they not in thy book?",
+   "verse_text_es": "Mis huidas tú has contado; pon mis lágrimas en tu redoma; ¿acaso no están en tu libro?",
+   "why": "short quote — glowbox reveals the verse instead of footnoting one word"
+  },
+  {
+   "chapter": "ch1",
+   "ref": "Matthew 6:34",
+   "ref_es": "Mateo 6:34",
+   "book": "Matthew",
+   "chap": 6,
+   "verse": 34,
+   "span_en": "not worry about tomorrow",
+   "span_es": "No os afanéis por el día de mañana",
+   "verse_text_en": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof.",
+   "verse_text_es": "Así que, no se afanen por el día de mañana, porque el día de mañana traerá su afán. Basta a cada día su propio mal.",
+   "why": "short quote — glowbox reveals the verse instead of footnoting one word"
+  },
+  {
+   "chapter": "ch2",
+   "ref": "John 14:1",
+   "ref_es": "Juan 14:1",
+   "book": "John",
+   "chap": 14,
+   "verse": 1,
+   "span_en": "Trust Me.",
+   "span_es": "Confía en mí.",
+   "verse_text_en": "Let not your heart be troubled: ye believe in God, believe also in me.",
+   "verse_text_es": "«No se turbe su corazón; creen en Dios, crean también en mí.",
+   "why": "short quote — glowbox reveals the verse instead of footnoting one word"
+  },
+  {
+   "chapter": "ch6",
+   "ref": "Ezekiel 33:7",
+   "ref_es": "Ezequiel 33:7",
+   "book": "Ezekiel",
+   "chap": 33,
+   "verse": 7,
+   "span_en": "be a watchman",
+   "span_es": "sé un centinela",
+   "verse_text_en": "So thou, O son of man, I have set thee a watchman unto the house of Israel; therefore thou shalt hear the word at my mouth, and warn them from me.",
+   "verse_text_es": "A ti, pues, hijo de hombre, te he puesto por atalaya a la casa de Israel, y oirás la palabra de mi boca, y los amonestarás de mi parte.",
+   "why": "short quote — glowbox reveals the verse instead of footnoting one word"
+  },
+  {
+   "chapter": "ch6",
+   "ref": "Galatians 3:13",
+   "ref_es": "Gálatas 3:13",
+   "book": "Galatians",
+   "chap": 3,
+   "verse": 13,
+   "span_en": "He carried the curse.",
+   "span_es": "Cargó la maldición.",
+   "verse_text_en": "Christ hath redeemed us from the curse of the law, being made a curse for us: for it is written, Cursed is every one that hangeth on a tree:",
+   "verse_text_es": "Cristo nos redimió de la maldición de la ley, hecho por nosotros maldición (porque está escrito: Maldito todo el que es colgado en un madero),",
+   "why": "short quote — glowbox reveals the verse instead of footnoting one word"
+  }
+ ],
+ "allusions": [
+  {
+   "chapter": "prologue",
+   "bucket": "solid",
+   "span_en": "Hearts failing from fear because of the things coming on the earth.",
+   "span_es": "Corazones desfalleciendo de miedo por las cosas que vienen sobre la tierra.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Luke 21:26",
+     "text": "Men’s hearts failing them for fear, and for looking after those things which are coming on the earth: for the powers of heaven shall be shaken.",
+     "book": "Luke",
+     "chap": 21,
+     "verse": 26
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Lucas 21:26",
+     "text": "desfalleciendo los hombres por el temor y la expectación de las cosas que sobrevendrán en la tierra; porque las potencias de los cielos serán conmovidas.",
+     "book": "Lucas",
+     "chap": 21,
+     "verse": 26
+    }
+   ],
+   "why": "Near-verbatim of Luke 21:26 ('Men's hearts failing them for fear, and for looking after those things which are coming on the earth') — a line unique to Luke's discourse, so the referent is unmistakable even though the surrounding list is narrated."
+  },
+  {
+   "chapter": "ch1",
+   "bucket": "solid",
+   "span_en": "You remember Him mentioning wars and rumors of wars.",
+   "span_es": "Recuerdas que mencionó guerras y rumores de guerras.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Matthew 24:6",
+     "text": "And ye shall hear of wars and rumours of wars: see that ye be not troubled: for all these things must come to pass, but the end is not yet.",
+     "book": "Matthew",
+     "chap": 24,
+     "verse": 6
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Mateo 24:6",
+     "text": "Y oirán de guerras y rumores de guerras; miren que no se turben, porque es necesario que todo esto acontezca; pero aún no es el fin.",
+     "book": "Mateo",
+     "chap": 24,
+     "verse": 6
+    }
+   ],
+   "why": "Matthew 24:6 says exactly 'ye shall hear of wars and rumours of wars'; the list it sits in ends with love growing cold, which is only Matthew 24:12, pinning the remembered discourse to Matthew 24 rather than Mark 13 or Luke 21."
+  },
+  {
+   "chapter": "ch3",
+   "bucket": "solid",
+   "span_en": "came back with the keys",
+   "span_es": "regresó con las llaves",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Revelation 1:18",
+     "text": "I am he that liveth, and was dead; and, behold, I am alive for evermore, Amen; and have the keys of hell and of death.",
+     "book": "Revelation",
+     "chap": 1,
+     "verse": 18
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Apocalipsis 1:18",
+     "text": "y el que vivo, y estuve muerto; mas he aquí que vivo por los siglos de los siglos, amén. Y tengo las llaves de la muerte y del Hades.",
+     "book": "Apocalipsis",
+     "chap": 1,
+     "verse": 18
+    }
+   ],
+   "why": "Revelation 1:18 is the only verse where the risen Christ holds 'the keys of hell and of death' — the descent-and-return with keys has no other referent."
+  },
+  {
+   "chapter": "ch4",
+   "bucket": "composite",
+   "span_en": "He used birds and lilies",
+   "span_es": "Usó las aves y los lirios",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Matthew 6:26",
+     "text": "Behold the fowls of the air: for they sow not, neither do they reap, nor gather into barns; yet your heavenly Father feedeth them. Are ye not much better than they?",
+     "book": "Matthew",
+     "chap": 6,
+     "verse": 26
+    },
+    {
+     "ref": "Matthew 6:28",
+     "text": "And why take ye thought for raiment? Consider the lilies of the field, how they grow; they toil not, neither do they spin:",
+     "book": "Matthew",
+     "chap": 6,
+     "verse": 28
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Mateo 6:26",
+     "text": "Miren las aves del cielo, que no siembran, ni siegan, ni recogen en graneros; y su Padre celestial las alimenta. ¿No valen ustedes mucho más que ellas?",
+     "book": "Mateo",
+     "chap": 6,
+     "verse": 26
+    },
+    {
+     "ref": "Mateo 6:28",
+     "text": "Y por el vestido, ¿por qué se afanan? Consideren los lirios del campo, cómo crecen: no trabajan ni hilan;",
+     "book": "Mateo",
+     "chap": 6,
+     "verse": 28
+    }
+   ],
+   "why": "Two named images, each with its own verse: birds are the fowls of the air of Matthew 6:26 and lilies are the lilies of the field of Matthew 6:28; the span reaches for both at once."
+  },
+  {
+   "chapter": "ch7",
+   "bucket": "solid",
+   "span_en": "went to weddings",
+   "span_es": "fue a bodas",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "John 2:2",
+     "text": "And both Jesus was called, and his disciples, to the marriage.",
+     "book": "John",
+     "chap": 2,
+     "verse": 2
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Juan 2:2",
+     "text": "Y fueron también invitados a las bodas Jesús y sus discípulos.",
+     "book": "Juan",
+     "chap": 2,
+     "verse": 2
+    }
+   ],
+   "why": "The only wedding Jesus is recorded attending is Cana, where John 2:2 states 'both Jesus was called, and his disciples, to the marriage'; the plural generalizes but the referent is single."
+  },
+  {
+   "chapter": "ch8",
+   "bucket": "solid",
+   "span_en": "to prepare a place for you",
+   "span_es": "para preparar un lugar para ti",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "John 14:2",
+     "text": "In my Father’s house are many mansions: if it were not so, I would have told you. I go to prepare a place for you.",
+     "book": "John",
+     "chap": 14,
+     "verse": 2
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Juan 14:2",
+     "text": "En la casa de mi Padre muchas moradas hay; si así no fuera, se lo habría dicho. Voy, pues, a preparar lugar para ustedes.",
+     "book": "Juan",
+     "chap": 14,
+     "verse": 2
+    }
+   ],
+   "why": "'I go to prepare a place for you' is verbatim John 14:2; 14:3 only restates it conditionally, so 14:2 is the statement being reached for."
+  },
+  {
+   "chapter": "ch8",
+   "bucket": "solid",
+   "span_en": "bent down to wash His friends’ feet",
+   "span_es": "se inclinó para lavar los pies de sus amigos",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "John 13:5",
+     "text": "After that he poureth water into a bason, and began to wash the disciples’ feet, and to wipe them with the towel wherewith he was girded.",
+     "book": "John",
+     "chap": 13,
+     "verse": 5
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Juan 13:5",
+     "text": "Luego echó agua en un recipiente, y comenzó a lavar los pies de los discípulos, y a secarlos con la toalla con que estaba ceñido.",
+     "book": "Juan",
+     "chap": 13,
+     "verse": 5
+    }
+   ],
+   "why": "John 13:5 is the washing itself — 'began to wash the disciples' feet' — while 13:4 is only the rising and girding; the span's act lands on 13:5."
+  },
+  {
+   "chapter": "prologue",
+   "bucket": "composite",
+   "span_en": "the kind of peace He gives in the middle of real trouble",
+   "span_es": "la clase de paz que Él da en medio de la verdadera aflicción",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "John 14:27",
+     "text": "Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled, neither let it be afraid.",
+     "book": "John",
+     "chap": 14,
+     "verse": 27
+    },
+    {
+     "ref": "John 16:33",
+     "text": "These things I have spoken unto you, that in me ye might have peace. In the world ye shall have tribulation: but be of good cheer; I have overcome the world.",
+     "book": "John",
+     "chap": 16,
+     "verse": 33
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Juan 14:27",
+     "text": "La paz les dejo, mi paz les doy; yo no se la doy como el mundo la da. No se turbe su corazón, ni tenga miedo.",
+     "book": "Juan",
+     "chap": 14,
+     "verse": 27
+    },
+    {
+     "ref": "Juan 16:33",
+     "text": "Estas cosas les he hablado para que en mí tengan paz. En el mundo tendrán aflicción; pero confíen, yo he vencido al mundo.»",
+     "book": "Juan",
+     "chap": 16,
+     "verse": 33
+    }
+   ],
+   "why": "Two distinct elements, each with its own verse: 'the kind of peace He gives' is the contrast of John 14:27 ('not as the world giveth'), and 'in the middle of real trouble' is John 16:33 ('In the world ye shall have tribulation')."
+  },
+  {
+   "chapter": "ch7",
+   "bucket": "solid",
+   "span_en": "welcomed children",
+   "span_es": "recibió a los niños",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Mark 10:14",
+     "text": "But when Jesus saw it, he was much displeased, and said unto them, Suffer the little children to come unto me, and forbid them not: for of such is the kingdom of God.",
+     "book": "Mark",
+     "chap": 10,
+     "verse": 14
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Marcos 10:14",
+     "text": "Al verlo Jesús, se indignó, y les dijo: «Dejen que los niños vengan a mí, y no se lo impidan; porque de los tales es el reino de Dios.",
+     "book": "Marcos",
+     "chap": 10,
+     "verse": 14
+    }
+   ],
+   "why": "Mark 10:14's 'Suffer the little children to come unto me, and forbid them not' is precisely the welcome described; the synoptic parallels retell one identifiable episode rather than dissolving the referent."
+  },
+  {
+   "chapter": "ch8",
+   "bucket": "composite",
+   "span_en": "took time for one bleeding woman in a crowd",
+   "span_es": "se detuvo por una mujer que sangraba entre la multitud",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Mark 5:25",
+     "text": "And a certain woman, which had an issue of blood twelve years,",
+     "book": "Mark",
+     "chap": 5,
+     "verse": 25
+    },
+    {
+     "ref": "Mark 5:30",
+     "text": "And Jesus, immediately knowing in himself that virtue had gone out of him, turned him about in the press, and said, Who touched my clothes?",
+     "book": "Mark",
+     "chap": 5,
+     "verse": 30
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Marcos 5:25",
+     "text": "Y una mujer que padecía de flujo de sangre desde hacía doce años,",
+     "book": "Marcos",
+     "chap": 5,
+     "verse": 25
+    },
+    {
+     "ref": "Marcos 5:30",
+     "text": "Y en seguida Jesús, conociendo en sí mismo el poder que había salido de él, se volvió hacia la multitud y dijo: «¿Quién ha tocado mi ropa?»",
+     "book": "Marcos",
+     "chap": 5,
+     "verse": 30
+    }
+   ],
+   "why": "No single verse carries the span: Mark 5:25 names the woman with the issue of blood, and Mark 5:30 supplies both the taking of time and the crowd ('turned him about in the press, and said, Who touched my clothes?')."
+  },
+  {
+   "chapter": "ch4",
+   "bucket": "composite",
+   "span_en": "Father to the fatherless and Provider to the hungry",
+   "span_es": "Padre de los huérfanos y Proveedor de los hambrientos",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Psalms 68:5",
+     "text": "A father of the fatherless, and a judge of the widows, is God in his holy habitation.",
+     "book": "Psalms",
+     "chap": 68,
+     "verse": 5
+    },
+    {
+     "ref": "Psalms 146:7",
+     "text": "Which executeth judgment for the oppressed: which giveth food to the hungry. The LORD looseth the prisoners:",
+     "book": "Psalms",
+     "chap": 146,
+     "verse": 7
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Salmos 68:5",
+     "text": "Padre de huérfanos y defensor de viudas es Dios en su santa morada.",
+     "book": "Salmos",
+     "chap": 68,
+     "verse": 5
+    },
+    {
+     "ref": "Salmos 146:7",
+     "text": "que hace justicia a los agraviados, que da pan a los hambrientos. El Señor liberta a los cautivos;",
+     "book": "Salmos",
+     "chap": 146,
+     "verse": 7
+    }
+   ],
+   "why": "Two titles, each from its own verse: 'A father of the fatherless' is Psalms 68:5 and 'giveth food to the hungry' is Psalms 146:7; neither verse covers the other half."
+  },
+  {
+   "chapter": "ch7",
+   "bucket": "solid",
+   "span_en": "He wept over cities",
+   "span_es": "Lloró sobre las ciudades",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Luke 19:41",
+     "text": "And when he was come near, he beheld the city, and wept over it,",
+     "book": "Luke",
+     "chap": 19,
+     "verse": 41
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Lucas 19:41",
+     "text": "Y cuando llegó cerca de la ciudad, al verla, lloró sobre ella,",
+     "book": "Lucas",
+     "chap": 19,
+     "verse": 41
+    }
+   ],
+   "why": "Luke 19:41 — 'he beheld the city, and wept over it' — is the one recorded weeping over a city; the plural generalizes but the verse is the referent."
+  },
+  {
+   "chapter": "prologue",
+   "bucket": "solid",
+   "span_en": "Lawlessness increasing.",
+   "span_es": "La maldad en aumento.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Matthew 24:12",
+     "text": "And because iniquity shall abound, the love of many shall wax cold.",
+     "book": "Matthew",
+     "chap": 24,
+     "verse": 12
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Mateo 24:12",
+     "text": "y por haberse multiplicado la maldad, el amor de muchos se enfriará.",
+     "book": "Mateo",
+     "chap": 24,
+     "verse": 12
+    }
+   ],
+   "why": "Matthew 24:12's 'because iniquity shall abound' is 'lawlessness increasing' by meaning (NKJV renders it 'lawlessness will abound'), and it is the only verse in the discourse making that claim."
+  },
+  {
+   "chapter": "ch1",
+   "bucket": "solid",
+   "span_en": "worrying about tomorrow does not add a single hour to your life",
+   "span_es": "afanarte por el mañana no añade una sola hora a tu vida",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Matthew 6:27",
+     "text": "Which of you by taking thought can add one cubit unto his stature?",
+     "book": "Matthew",
+     "chap": 6,
+     "verse": 27
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Mateo 6:27",
+     "text": "¿Y quién de ustedes podrá, por más que se afane, añadir a su estatura un codo?",
+     "book": "Mateo",
+     "chap": 6,
+     "verse": 27
+    }
+   ],
+   "why": "By meaning this is Matthew 6:27 — worrying adds nothing to your life span ('add one cubit unto his stature'); the chapter's frame is the Sermon on the Mount, which anchors it to Matthew rather than the Luke 12:25 parallel."
+  },
+  {
+   "chapter": "ch7",
+   "bucket": "solid",
+   "span_en": "Paul wrote about not sleeping like those who are in the dark.",
+   "span_es": "Pablo escribió sobre no dormir como los que están en tinieblas.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "1 Thessalonians 5:6",
+     "text": "Therefore let us not sleep, as do others; but let us watch and be sober.",
+     "book": "1 Thessalonians",
+     "chap": 5,
+     "verse": 6
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "1 Tesalonicenses 5:6",
+     "text": "Por tanto, no durmamos como los demás, sino velemos y seamos sobrios.",
+     "book": "1 Tesalonicenses",
+     "chap": 5,
+     "verse": 6
+    }
+   ],
+   "why": "1 Thessalonians 5:6 ('let us not sleep, as do others; but let us watch and be sober') carries the whole paraphrase in one verse — the 'others' are the night-dwellers unpacked in the same paragraph."
+  },
+  {
+   "chapter": "ch8",
+   "bucket": "solid",
+   "span_en": "we listened to another voice and tried to define good and evil on our own terms",
+   "span_es": "escuchamos otra voz e intentamos definir el bien y el mal en nuestros propios términos",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Genesis 3:5",
+     "text": "For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil.",
+     "book": "Genesis",
+     "chap": 3,
+     "verse": 5
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Génesis 3:5",
+     "text": "sino que sabe Dios que el día que coman de él, serán abiertos sus ojos, y serán como Dios, sabiendo el bien y el mal.",
+     "book": "Génesis",
+     "chap": 3,
+     "verse": 5
+    }
+   ],
+   "why": "Genesis 3:5 uniquely holds both halves of the span — it IS the other voice, and it offers to 'be as gods, knowing good and evil'; 2:17 is God's voice and 3:22 God's verdict, so neither competes."
+  },
+  {
+   "chapter": "ch8",
+   "bucket": "solid",
+   "span_en": "rejoices when you come back to His side",
+   "span_es": "se regocija cuando vuelves a su lado",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Luke 15:5",
+     "text": "And when he hath found it, he layeth it on his shoulders, rejoicing.",
+     "book": "Luke",
+     "chap": 15,
+     "verse": 5
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Lucas 15:5",
+     "text": "Y cuando la encuentra, la pone sobre sus hombros gozoso;",
+     "book": "Lucas",
+     "chap": 15,
+     "verse": 5
+    }
+   ],
+   "why": "The rejoicing one here is the Shepherd, which is Luke 15:5 ('when he hath found it, he layeth it on his shoulders, rejoicing') — not the considered Luke 15:7, where the rejoicing is heaven's."
+  },
+  {
+   "chapter": "ch8",
+   "bucket": "solid",
+   "span_en": "He will wipe away every tear.",
+   "span_es": "Él enjugará toda lágrima.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Revelation 21:4",
+     "text": "And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away.",
+     "book": "Revelation",
+     "chap": 21,
+     "verse": 4
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Apocalipsis 21:4",
+     "text": "Enjugará Dios toda lágrima de los ojos de ellos; y ya no habrá muerte, ni habrá más llanto, ni clamor, ni dolor; porque las primeras cosas pasaron.",
+     "book": "Apocalipsis",
+     "chap": 21,
+     "verse": 4
+    }
+   ],
+   "why": "Revelation 21:4 is the referent: the surrounding prose tracks it clause for clause — storms over, systems gone, 'the former things are passed away' — which Revelation 7:17 and Isaiah 25:8 do not supply."
+  },
+  {
+   "chapter": "intro",
+   "bucket": "composite",
+   "span_en": "there would be wars, rumors of wars, lawlessness, love growing cold",
+   "span_es": "habría guerras, rumores de guerras, maldad, y que el amor de muchos se enfriaría",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Matthew 24:6",
+     "text": "And ye shall hear of wars and rumours of wars: see that ye be not troubled: for all these things must come to pass, but the end is not yet.",
+     "book": "Matthew",
+     "chap": 24,
+     "verse": 6
+    },
+    {
+     "ref": "Matthew 24:12",
+     "text": "And because iniquity shall abound, the love of many shall wax cold.",
+     "book": "Matthew",
+     "chap": 24,
+     "verse": 12
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Mateo 24:6",
+     "text": "Y oirán de guerras y rumores de guerras; miren que no se turben, porque es necesario que todo esto acontezca; pero aún no es el fin.",
+     "book": "Mateo",
+     "chap": 24,
+     "verse": 6
+    },
+    {
+     "ref": "Mateo 24:12",
+     "text": "y por haberse multiplicado la maldad, el amor de muchos se enfriará.",
+     "book": "Mateo",
+     "chap": 24,
+     "verse": 12
+    }
+   ],
+   "why": "Two specific Olivet verses are each present: 24:6 supplies 'wars and rumours of wars' verbatim, and 24:12 supplies both remaining beats ('iniquity shall abound' = lawlessness; 'the love of many shall wax cold')."
+  },
+  {
+   "chapter": "ch1",
+   "bucket": "solid",
+   "span_en": "He told you to love your neighbor, yes.",
+   "span_es": "Te dijo que amaras a tu prójimo, sí.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Matthew 22:39",
+     "text": "And the second is like unto it, Thou shalt love thy neighbour as thyself.",
+     "book": "Matthew",
+     "chap": 22,
+     "verse": 39
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Mateo 22:39",
+     "text": "Y el segundo es semejante: Amarás a tu prójimo como a ti mismo.",
+     "book": "Mateo",
+     "chap": 22,
+     "verse": 39
+    }
+   ],
+   "why": "Not the author's image but a command Jesus verifiably gave, and Matthew 22:39 ('Thou shalt love thy neighbour as thyself') is the second-great-commandment locus a reader identifies; gospel parallels are the same saying, not rival referents."
+  },
+  {
+   "chapter": "ch3",
+   "bucket": "solid",
+   "span_en": "He has counted every one of them",
+   "span_es": "Él ha contado cada una de ellas",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Psalms 56:8",
+     "text": "Thou tellest my wanderings: put thou my tears into thy bottle: are they not in thy book?",
+     "book": "Psalms",
+     "chap": 56,
+     "verse": 8
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Salmos 56:8",
+     "text": "Mis huidas tú has contado; pon mis lágrimas en tu redoma; ¿acaso no están en tu libro?",
+     "book": "Salmos",
+     "chap": 56,
+     "verse": 8
+    }
+   ],
+   "why": "The context is explicitly tears, and Psalms 56:8 is the unique tears-kept-in-a-bottle-and-book verse; 'counted every one' glosses its meaning (God keeps account of every tear), while Matthew 10:30 numbers hairs, not tears."
+  },
+  {
+   "chapter": "ch6",
+   "bucket": "solid",
+   "span_en": "take up a cross and follow Him",
+   "span_es": "tomemos una cruz y lo sigamos",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Matthew 16:24",
+     "text": "Then said Jesus unto his disciples, If any man will come after me, let him deny himself, and take up his cross, and follow me.",
+     "book": "Matthew",
+     "chap": 16,
+     "verse": 24
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Mateo 16:24",
+     "text": "Entonces Jesús dijo a sus discípulos: Si alguno quiere venir en pos de mí, niéguese a sí mismo, tome su cruz, y sígame.",
+     "book": "Mateo",
+     "chap": 16,
+     "verse": 24
+    }
+   ],
+   "why": "Matthew 16:24 reads 'take up his cross, and follow me' — the span's exact sense and near-exact wording; the synoptic parallels are the same saying, and 16:24 is its standard locus."
+  },
+  {
+   "chapter": "ch8",
+   "bucket": "solid",
+   "span_en": "Sin entered. Shame followed. Death slipped in like a shadow at noon.",
+   "span_es": "Entró el pecado. Le siguió la vergüenza. La muerte se coló como una sombra al mediodía.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Romans 5:12",
+     "text": "Wherefore, as by one man sin entered into the world, and death by sin; and so death passed upon all men, for that all have sinned:",
+     "book": "Romans",
+     "chap": 5,
+     "verse": 12
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Romanos 5:12",
+     "text": "Por tanto, como el pecado entró en el mundo por un hombre, y por el pecado la muerte, así la muerte pasó a todos los hombres, por cuanto todos pecaron.",
+     "book": "Romanos",
+     "chap": 5,
+     "verse": 12
+    }
+   ],
+   "why": "'Sin entered' followed by death is Romans 5:12's exact structure and vocabulary ('as by one man sin entered into the world, and death by sin') — Genesis 3 never says sin entered, so the Pauline verse is the referent even though the shadow image is the author's."
+  },
+  {
+   "chapter": "ch8",
+   "bucket": "solid",
+   "span_en": "Sin has separated you from Him.",
+   "span_es": "El pecado te ha separado de Él.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Isaiah 59:2",
+     "text": "But your iniquities have separated between you and your God, and your sins have hid his face from you, that he will not hear.",
+     "book": "Isaiah",
+     "chap": 59,
+     "verse": 2
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Isaías 59:2",
+     "text": "pero las iniquidades de ustedes han hecho separación entre ustedes y su Dios, y sus pecados han hecho ocultar de ustedes su rostro para no oír.",
+     "book": "Isaías",
+     "chap": 59,
+     "verse": 2
+    }
+   ],
+   "why": "Isaiah 59:2 ('your iniquities have separated between you and your God') is the unique sin-separates-from-God verse; the span states its precise claim, person-shift notwithstanding."
+  },
+  {
+   "chapter": "intro",
+   "bucket": "solid",
+   "span_en": "You are not the One holding all things together.",
+   "span_es": "No eres quien sostiene todas las cosas.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Colossians 1:17",
+     "text": "And he is before all things, and by him all things consist.",
+     "book": "Colossians",
+     "chap": 1,
+     "verse": 17
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Colosenses 1:17",
+     "text": "Y él es antes de todas las cosas, y todas las cosas en él subsisten;",
+     "book": "Colosenses",
+     "chap": 1,
+     "verse": 17
+    }
+   ],
+   "why": "'Holding all things together' is the standard English rendering of Colossians 1:17's synechō ('by him all things consist'); Hebrews 1:3 says 'upholding all things' with no sense of holding together, so Colossians is the pin."
+  },
+  {
+   "chapter": "ch7",
+   "bucket": "solid",
+   "span_en": "the Son of God gave Himself for you",
+   "span_es": "el Hijo de Dios se entregó por ti",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Galatians 2:20",
+     "text": "I am crucified with Christ: nevertheless I live; yet not I, but Christ liveth in me: and the life which I now live in the flesh I live by the faith of the Son of God, who loved me, and gave himself for me.",
+     "book": "Galatians",
+     "chap": 2,
+     "verse": 20
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Gálatas 2:20",
+     "text": "Con Cristo estoy juntamente crucificado, y ya no vivo yo, mas vive Cristo en mí; y lo que ahora vivo en la carne, lo vivo en la fe del Hijo de Dios, el cual me amó y se entregó a sí mismo por mí.",
+     "book": "Gálatas",
+     "chap": 2,
+     "verse": 20
+    }
+   ],
+   "why": "'The Son of God, who loved me, and gave himself for me' is verbatim Galatians 2:20 with only a person shift; the Ephesians 5:2/5:25 parallels lack the 'Son of God' title, so 2:20 is uniquely identifiable."
+  },
+  {
+   "chapter": "ch8",
+   "bucket": "solid",
+   "span_en": "God made the world and called it good.",
+   "span_es": "Dios hizo el mundo y lo llamó bueno.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Genesis 1:31",
+     "text": "And God saw every thing that he had made, and, behold, it was very good. And the evening and the morning were the sixth day.",
+     "book": "Genesis",
+     "chap": 1,
+     "verse": 31
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Génesis 1:31",
+     "text": "Y vio Dios todo lo que había hecho, y he aquí que era bueno en gran manera. Y fue la tarde y la mañana el día sexto.",
+     "book": "Génesis",
+     "chap": 1,
+     "verse": 31
+    }
+   ],
+   "why": "Genesis 1:31 is the only verse pronouncing the goodness of the whole made world ('every thing that he had made... very good'), which is what the span claims; the 1:4-25 refrains each pronounce a single item good."
+  },
+  {
+   "chapter": "ch1",
+   "bucket": "composite",
+   "span_en": "You remember hearing about earthquakes, pestilences, betrayals, love growing cold.",
+   "span_es": "Recuerdas haber oído sobre terremotos, pestes, traiciones, el amor enfriándose.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Matthew 24:7",
+     "text": "For nation shall rise against nation, and kingdom against kingdom: and there shall be famines, and pestilences, and earthquakes, in divers places.",
+     "book": "Matthew",
+     "chap": 24,
+     "verse": 7
+    },
+    {
+     "ref": "Matthew 24:10",
+     "text": "And then shall many be offended, and shall betray one another, and shall hate one another.",
+     "book": "Matthew",
+     "chap": 24,
+     "verse": 10
+    },
+    {
+     "ref": "Matthew 24:12",
+     "text": "And because iniquity shall abound, the love of many shall wax cold.",
+     "book": "Matthew",
+     "chap": 24,
+     "verse": 12
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Mateo 24:7",
+     "text": "Porque se levantará nación contra nación, y reino contra reino; y habrá hambres, pestilencias y terremotos en diferentes lugares.",
+     "book": "Mateo",
+     "chap": 24,
+     "verse": 7
+    },
+    {
+     "ref": "Mateo 24:10",
+     "text": "Muchos tropezarán entonces, y se entregarán unos a otros, y unos a otros se aborrecerán.",
+     "book": "Mateo",
+     "chap": 24,
+     "verse": 10
+    },
+    {
+     "ref": "Mateo 24:12",
+     "text": "y por haberse multiplicado la maldad, el amor de muchos se enfriará.",
+     "book": "Mateo",
+     "chap": 24,
+     "verse": 12
+    }
+   ],
+   "why": "Each item pins a distinct verse: earthquakes and pestilences to 24:7, 'shall betray one another' to 24:10, and 'the love of many shall wax cold' to 24:12."
+  },
+  {
+   "chapter": "ch6",
+   "bucket": "solid",
+   "span_en": "stand in the gap",
+   "span_es": "ponte en la brecha",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Ezekiel 22:30",
+     "text": "And I sought for a man among them, that should make up the hedge, and stand in the gap before me for the land, that I should not destroy it: but I found none.",
+     "book": "Ezekiel",
+     "chap": 22,
+     "verse": 30
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Ezequiel 22:30",
+     "text": "Y busqué entre ellos hombre que hiciese vallado y que se pusiese en la brecha delante de mí, a favor de la tierra, para que yo no la destruyese; y no lo hallé.",
+     "book": "Ezequiel",
+     "chap": 22,
+     "verse": 30
+    }
+   ],
+   "why": "'Stand in the gap' appears verbatim and only in Ezekiel 22:30; that the prose reports it as a church catchphrase does not change which verse the phrase reaches for."
+  },
+  {
+   "chapter": "ch7",
+   "bucket": "solid",
+   "span_en": "The Body of Christ is many members.",
+   "span_es": "El Cuerpo de Cristo es muchos miembros.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "1 Corinthians 12:12",
+     "text": "For as the body is one, and hath many members, and all the members of that one body, being many, are one body: so also is Christ.",
+     "book": "1 Corinthians",
+     "chap": 12,
+     "verse": 12
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "1 Corintios 12:12",
+     "text": "Porque así como el cuerpo es uno, y tiene muchos miembros, pero todos los miembros del cuerpo, siendo muchos, son un solo cuerpo, así también Cristo.",
+     "book": "1 Corintios",
+     "chap": 12,
+     "verse": 12
+    }
+   ],
+   "why": "1 Corinthians 12:12 alone joins all three elements of the span — body, 'many members', and Christ ('so also is Christ'); 12:14/12:20 and Romans 12:4 omit the Christ identification."
+  },
+  {
+   "chapter": "ch8",
+   "bucket": "solid",
+   "span_en": "lays His life down for you",
+   "span_es": "da su vida por ti",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "John 10:11",
+     "text": "I am the good shepherd: the good shepherd giveth his life for the sheep.",
+     "book": "John",
+     "chap": 10,
+     "verse": 11
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Juan 10:11",
+     "text": "Yo soy el buen pastor; el buen pastor da su vida por las ovejas.",
+     "book": "Juan",
+     "chap": 10,
+     "verse": 11
+    }
+   ],
+   "why": "The surrounding paragraph is sustained Good Shepherd imagery, and John 10:11 ('the good shepherd giveth his life for the sheep') is that image's locus; judged by meaning rather than the 10:15 wording, 10:11 is what the reader identifies."
+  },
+  {
+   "chapter": "ch1",
+   "bucket": "solid",
+   "span_en": "He told you to carry a cross, yes.",
+   "span_es": "Te dijo que cargaras una cruz, sí.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Matthew 16:24",
+     "text": "Then said Jesus unto his disciples, If any man will come after me, let him deny himself, and take up his cross, and follow me.",
+     "book": "Matthew",
+     "chap": 16,
+     "verse": 24
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Mateo 16:24",
+     "text": "Entonces Jesús dijo a sus discípulos: Si alguno quiere venir en pos de mí, niéguese a sí mismo, tome su cruz, y sígame.",
+     "book": "Mateo",
+     "chap": 16,
+     "verse": 24
+    }
+   ],
+   "why": "Matthew 16:24's 'take up his cross, and follow me' is the command the span reports; the synoptic parallels record the same saying rather than competing referents."
+  },
+  {
+   "chapter": "ch7",
+   "bucket": "solid",
+   "span_en": "Tears are wiped away.",
+   "span_es": "Las lágrimas son enjugadas.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Revelation 21:4",
+     "text": "And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away.",
+     "book": "Revelation",
+     "chap": 21,
+     "verse": 4
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Apocalipsis 21:4",
+     "text": "Enjugará Dios toda lágrima de los ojos de ellos; y ya no habrá muerte, ni habrá más llanto, ni clamor, ni dolor; porque las primeras cosas pasaron.",
+     "book": "Apocalipsis",
+     "chap": 21,
+     "verse": 4
+    }
+   ],
+   "why": "The span sits in a list of the final ending, where Revelation 21:4 uniquely supplies both this beat and the next ('shall wipe away all tears' and 'no more death'); Revelation 7:17 and Isaiah 25:8 are pre-consummation echoes."
+  },
+  {
+   "chapter": "ch8",
+   "bucket": "composite",
+   "span_en": "Nothing in the future — no “things to come,” no system, no darkness, no headline, no collapse — can separate you from that love.",
+   "span_es": "Nada en el futuro —ninguna “cosa por venir”, ningún sistema, ninguna oscuridad, ningún titular, ningún colapso— puede separarte de ese amor.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Romans 8:38",
+     "text": "For I am persuaded, that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, nor things to come,",
+     "book": "Romans",
+     "chap": 8,
+     "verse": 38
+    },
+    {
+     "ref": "Romans 8:39",
+     "text": "Nor height, nor depth, nor any other creature, shall be able to separate us from the love of God, which is in Christ Jesus our Lord.",
+     "book": "Romans",
+     "chap": 8,
+     "verse": 39
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Romanos 8:38",
+     "text": "Por lo cual estoy seguro de que ni la muerte, ni la vida, ni ángeles, ni principados, ni potestades, ni lo presente, ni lo por venir,",
+     "book": "Romanos",
+     "chap": 8,
+     "verse": 38
+    },
+    {
+     "ref": "Romanos 8:39",
+     "text": "ni lo alto, ni lo profundo, ni ninguna otra cosa creada nos podrá separar del amor de Dios, que es en Cristo Jesús Señor nuestro.",
+     "book": "Romanos",
+     "chap": 8,
+     "verse": 39
+    }
+   ],
+   "why": "The span genuinely straddles two verses: 'things to come' is quoted verbatim from 8:38, and 'separate you from that love' is 8:39's 'separate us from the love of God'; the modern list is the author's insertion."
+  },
+  {
+   "chapter": "ch8",
+   "bucket": "composite",
+   "span_en": "He came to save the lost, heal the broken, forgive sinners, and bring them into a real relationship with Himself.",
+   "span_es": "Vino a salvar a los perdidos, a sanar a los quebrantados, a perdonar a los pecadores y a traerlos a una relación real consigo mismo.",
+   "occurrence_es": null,
+   "verses_en": [
+    {
+     "ref": "Luke 19:10",
+     "text": "For the Son of man is come to seek and to save that which was lost.",
+     "book": "Luke",
+     "chap": 19,
+     "verse": 10
+    },
+    {
+     "ref": "Luke 4:18",
+     "text": "The Spirit of the Lord is upon me, because he hath anointed me to preach the gospel to the poor; he hath sent me to heal the brokenhearted, to preach deliverance to the captives, and recovering of sight to the blind, to set at liberty them that are bruised,",
+     "book": "Luke",
+     "chap": 4,
+     "verse": 18
+    }
+   ],
+   "verses_es": [
+    {
+     "ref": "Lucas 19:10",
+     "text": "Porque el Hijo del Hombre vino a buscar y a salvar lo que se había perdido.",
+     "book": "Lucas",
+     "chap": 19,
+     "verse": 10
+    },
+    {
+     "ref": "Lucas 4:18",
+     "text": "El Espíritu del Señor está sobre mí, por cuanto me ha ungido para predicar buenas nuevas a los pobres; me ha enviado a sanar a los quebrantados de corazón; a pregonar libertad a los cautivos, y vista a los ciegos; a poner en libertad a los oprimidos;",
+     "book": "Lucas",
+     "chap": 4,
+     "verse": 18
+    }
+   ],
+   "why": "Two mission statements are each specifically present — 'save the lost' is Luke 19:10 ('to seek and to save that which was lost') and 'heal the broken' is Luke 4:18 ('to heal the brokenhearted'); the last two clauses are the author's own and pin nothing."
+  }
+ ],
+ "unmarked_allusions": [
+  {
+   "chapter": "ch5",
+   "span": "the God who loved you before the world began",
+   "why": "No verse says God loved *you* before the world began: Ephesians 1:4 says chosen (not loved), John 17:24 is the Father loving the Son, and 2 Timothy 1:9 / Titus 1:2 give grace and promise before the world began — the fusion is the author's own."
+  },
+  {
+   "chapter": "intro",
+   "span": "living in a world He already told you would shake",
+   "why": "'Shake' is the author's synthesis word with at least three live candidates — Hebrews 12:26, its source Haggai 2:6, and Luke 21:26's shaken powers of heaven — so no referent is uniquely identifiable."
+  },
+  {
+   "chapter": "ch6",
+   "span": "the One whose shoulders never tire",
+   "why": "Isaiah 40:28 says the everlasting God 'fainteth not, neither is weary' but has no shoulders; the shoulder image is the author's own and the burden-lifting sentiment is too loose to pin to any single verse."
+  },
+  {
+   "chapter": "ch8",
+   "span": "The God who spoke galaxies into being",
+   "why": "The author's own figure; creation-by-speech sits equally in Genesis 1, Psalms 33:6/9 and Hebrews 11:3, and no verse mentions galaxies — no uniquely identifiable referent."
+  },
+  {
+   "chapter": "prologue",
+   "span": "reminders of what your Shepherd actually said",
+   "why": "A bare title-epithet used to attribute speech, reaching for no verse's content; 'Shepherd' points equally to Psalms 23:1, John 10:11/14, Hebrews 13:20 or 1 Peter 5:4."
+  },
+  {
+   "chapter": "ch5",
+   "span": "He is the One who spoke galaxies into being",
+   "why": "The author's own creation-by-speech figure, fitting Genesis 1, Psalms 33:6/9 and Hebrews 11:3 alike; Psalms 33:9 ('he spake, and it was done') cannot be uniquely justified."
+  }
+ ]
+}
