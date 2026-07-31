@@ -2720,7 +2720,10 @@
           elGo   = box.querySelector(".glowbox-go"),   elX    = box.querySelector(".glowbox-close");
       var openEl = null;
 
-      function isES(){ try { return (typeof _lang !== "undefined" && _lang === "es"); } catch(e){ return false; } }
+      // read the shared localStorage key — `_lang` is var-scoped INSIDE the reader IIFE and
+      // never on window, so `typeof _lang` from this separate <script> block is always
+      // "undefined". That silently broke every glow/asterisk mark in the Spanish edition.
+      function isES(){ try { return localStorage.getItem("dnbt_lang") === "es"; } catch(e){ return false; } }
       function esc(s){ var d=document.createElement("div"); d.textContent=s; return d.innerHTML; }
 
       function close(){
