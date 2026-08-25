@@ -1465,6 +1465,58 @@
       .glowbox,.glowbox-veil{ transition:none; } .glow-verse.hint{ animation:none; }
     }
 
+    /* ── BIBLE OVERLAY (WV-VERSE-20260715) — the Word, in place, without losing your page ── */
+    .bible-ov{
+      position:fixed; inset:0; z-index:10050; display:flex; flex-direction:column;
+      background:var(--paper,#f6efe0);
+      opacity:0; pointer-events:none; transform:translateY(1.2%);
+      transition:opacity .24s ease, transform .24s ease;
+    }
+    .bible-ov.show{ opacity:1; pointer-events:auto; transform:translateY(0); }
+    .bible-ov-bar{
+      flex:0 0 auto; display:flex; align-items:center; gap:.6rem;
+      padding:calc(env(safe-area-inset-top,0px) + .55rem) .75rem .55rem;
+      background:var(--paper,#f6efe0);
+      border-bottom:1px solid rgba(176,141,87,.4);
+      font-family:var(--serif,Georgia,'Times New Roman',serif);
+    }
+    .bible-ov-x{
+      flex:0 0 auto; width:2.1rem; height:2.1rem; border:0; border-radius:50%;
+      background:rgba(176,141,87,.16); color:var(--ink,#2b2419);
+      font-size:1.15rem; line-height:1; cursor:pointer; font-family:inherit;
+      display:flex; align-items:center; justify-content:center;
+      transition:background-color .18s ease; -webkit-tap-highlight-color:transparent;
+    }
+    .bible-ov-x:hover,.bible-ov-x:focus-visible{ background:rgba(176,141,87,.34); outline:none; }
+    .bible-ov-ref{
+      flex:1 1 auto; min-width:0; font-size:.82rem; font-weight:600;
+      letter-spacing:.1em; text-transform:uppercase; color:rgba(140,108,60,.95);
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    }
+    .bible-ov-out{
+      flex:0 0 auto; font-size:.74rem; text-decoration:none; font-family:inherit;
+      color:rgba(90,74,50,.95); border:1px solid rgba(176,141,87,.5);
+      padding:.36rem .6rem; border-radius:.3rem; white-space:nowrap;
+      transition:background-color .18s ease;
+    }
+    .bible-ov-out:hover,.bible-ov-out:focus-visible{ background:rgba(176,141,87,.16); outline:none; }
+    .bible-ov-frame{ flex:1 1 auto; width:100%; border:0; background:var(--paper,#f6efe0); }
+    .bible-ov-state{
+      position:absolute; left:0; right:0; top:3.6rem; bottom:0;
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      gap:.7rem; padding:2rem 1.6rem; text-align:center;
+      font-family:var(--serif,Georgia,'Times New Roman',serif); color:var(--ink,#2b2419);
+      background:var(--paper,#f6efe0);
+    }
+    .bible-ov-state[hidden]{ display:none; }
+    .bible-ov-seal{ font-size:1.5rem; color:rgba(176,141,87,.9); }
+    .bible-ov-msg{ font-size:.95rem; font-style:italic; line-height:1.6; max-width:22rem; }
+    .bible-ov-sub{ font-size:.78rem; color:rgba(120,98,64,.9); }
+    @keyframes ovDots{ 0%,80%,100%{opacity:.25} 40%{opacity:1} }
+    .bible-ov-dots span{ animation:ovDots 1.4s infinite; }
+    .bible-ov-dots span:nth-child(2){ animation-delay:.2s } .bible-ov-dots span:nth-child(3){ animation-delay:.4s }
+    @media (prefers-reduced-motion:reduce){ .bible-ov{transition:none} .bible-ov-dots span{animation:none} }
+
   </style>
 </head>
 <body>
@@ -2779,6 +2831,125 @@
       });
       // a page turn must never leave a box floating over the new page
       window.addEventListener("dnbt:pagechange", close);
+    })();
+
+  </script>
+  <script>
+
+    // ── BIBLE OVERLAY: read the chapter without leaving the book ──
+    (function(){
+      var BIBLE_ORIGIN = "https://bible.witnessweave.com";
+      var ov = document.createElement("div"); ov.className = "bible-ov";
+      ov.setAttribute("role","dialog"); ov.setAttribute("aria-modal","true"); ov.setAttribute("aria-label","Bible");
+      ov.innerHTML =
+        '<div class="bible-ov-bar">'
+      +   '<button class="bible-ov-x" type="button" aria-label="Close">✕</button>'
+      +   '<div class="bible-ov-ref"></div>'
+      +   '<a class="bible-ov-out" target="_blank" rel="noopener"></a>'
+      + '</div>'
+      + '<iframe class="bible-ov-frame" title="Bible" referrerpolicy="no-referrer"></iframe>'
+      + '<div class="bible-ov-state">'
+      +   '<div class="bible-ov-seal">✠</div>'
+      +   '<div class="bible-ov-msg"></div>'
+      +   '<div class="bible-ov-sub"></div>'
+      + '</div>';
+      document.body.appendChild(ov);
+      var elX = ov.querySelector(".bible-ov-x"), elRef = ov.querySelector(".bible-ov-ref"),
+          elOut = ov.querySelector(".bible-ov-out"), fr = ov.querySelector(".bible-ov-frame"),
+          st = ov.querySelector(".bible-ov-state"), stMsg = st.querySelector(".bible-ov-msg"),
+          stSub = st.querySelector(".bible-ov-sub");
+      var open = false, timer = null, pushed = false;
+
+      // shared localStorage key — `_lang` is var-scoped inside the reader IIFE, not on
+      // window, so `typeof _lang` from this script block is always "undefined".
+      function isES(){ try { return localStorage.getItem("dnbt_lang") === "es"; } catch(e){ return false; } }
+      function say(msg, sub){ stMsg.innerHTML = msg; stSub.textContent = sub || ""; st.hidden = false; }
+
+      function close(fromPop){
+        if(!open) return;
+        open = false;
+        ov.classList.remove("show");
+        clearTimeout(timer);
+        // let the fade finish, then drop the frame so the Bible stops living in memory
+        setTimeout(function(){ if(!open) fr.removeAttribute("src"); }, 260);
+        document.documentElement.style.overflow = "";
+        if(pushed && !fromPop){ pushed = false; try{ history.back(); }catch(e){} }
+        else { pushed = false; }
+      }
+
+      function openAt(url, ref){
+        if(open) return;                         // guard: a double-call would orphan a history entry
+        var es = isES();
+        elRef.textContent = ref || (es ? "La Biblia" : "The Bible");
+        elOut.textContent = es ? "Abrir en su pestaña ↗" : "Open in its own tab ↗";
+        elOut.href = url;                          // "own tab" gets the FULL reader (no embed)
+        elX.setAttribute("aria-label", es ? "Cerrar" : "Close");
+        st.hidden = true;
+
+        if(!navigator.onLine){
+          // The book reads offline; the Bible cannot. Say so plainly — the glowbox already
+          // gave them the verse itself, so nothing is actually lost here.
+          say(es ? "Sin conexión — la Biblia no puede cargar ahora."
+                 : "You’re offline — the Bible can’t load right now.",
+              es ? "El versículo sigue arriba. Inténtalo cuando vuelvas a tener señal."
+                 : "The verse itself is still above. Try again when you have a signal.");
+        } else {
+          say((es ? "Abriendo la Biblia" : "Opening the Bible")
+              + ' <span class="bible-ov-dots"><span>.</span><span>.</span><span>.</span></span>',
+              es ? "La primera vez tarda un poco." : "The first open takes a moment.");
+          // frame gets ?embed=1 (header collapses to just ☰); the "own tab" link stays un-embedded
+          try { var _u = new URL(url); _u.searchParams.set("embed","1"); fr.src = _u.toString(); }
+          catch(e){ fr.src = url; }
+          clearTimeout(timer);
+          timer = setTimeout(function(){
+            if(!st.hidden) say(es ? "La Biblia está tardando más de lo normal."
+                                  : "The Bible is taking longer than usual.",
+                               es ? "Puedes abrirla en su propia pestaña arriba."
+                                  : "You can open it in its own tab above.");
+          }, 12000);
+        }
+
+        ov.classList.add("show");
+        open = true;
+        document.documentElement.style.overflow = "hidden";
+        // back key / back button closes the overlay instead of leaving the book
+        try { history.pushState({dnbtBible:true}, ""); pushed = true; } catch(e){ pushed = false; }
+        elX.focus({preventScroll:true});
+      }
+
+      fr.addEventListener("load", function(){ if(open){ clearTimeout(timer); st.hidden = true; } });
+      elX.addEventListener("click", function(){ close(false); });
+      elOut.addEventListener("click", function(){ close(false); });   // they chose the real site
+      window.addEventListener("popstate", function(ev){
+        // only close on OUR pushed state popping. Guards the case where the reader's own
+        // replaceState overwrote our entry — without this, ✕ could navigate out of the chapter.
+        if(open) close(true);
+      });
+      document.addEventListener("keydown", function(ev){ if(open && ev.key === "Escape") close(false); });
+
+      // Any link into the Bible opens HERE instead of a new tab.
+      document.addEventListener("click", function(ev){
+        var a = ev.target.closest && ev.target.closest('a[href^="' + BIBLE_ORIGIN + '"]');
+        if(!a) return;
+        if(a.classList.contains("bible-ov-out")) return;   // that one really does leave
+        ev.preventDefault(); ev.stopPropagation();
+        var ref = a.getAttribute("title") || a.textContent || "";
+        ref = ref.split("—")[0].trim();
+        // the handoff: if this came from a glowbox, take its ref and dismiss it, so the
+        // reader doesn't come back from the Bible to a stale box floating over the page
+        var gb = a.closest(".glowbox");
+        if(gb){
+          var r = gb.querySelector(".glowbox-ref");
+          if(r) ref = r.textContent;
+          gb.classList.remove("show");
+          var veil = document.querySelector(".glowbox-veil"); if(veil) veil.classList.remove("show");
+          document.querySelectorAll(".glow-verse.open,.allude-verse.open")
+                  .forEach(function(e){ e.classList.remove("open"); });
+        }
+        openAt(a.getAttribute("href"), ref);
+      }, true);
+
+      window.dnbtOpenBible = openAt;   // so the glowbox can hand off to us
     })();
 
   </script>
